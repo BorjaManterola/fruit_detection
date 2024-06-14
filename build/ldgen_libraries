@@ -80,7 +80,6 @@
 /home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/perfmon/libperfmon.a
 /home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/spiffs/libspiffs.a
 /home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
-/home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/static_images/libstatic_images.a
 /home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/espressif__esp-nn/libespressif__esp-nn.a
 /home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/espressif__esp-tflite-micro/libespressif__esp-tflite-micro.a
 /home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a
