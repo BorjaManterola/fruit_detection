@@ -104,12 +104,12 @@ void loop() {
   }
 
   TfLiteTensor* output = interpreter->output(0);
-  float digit_scores[kCategoryCount];
+  float fruit_scores[kCategoryCount];
   for (int i = 0; i < kCategoryCount; ++i) {
-    digit_scores[i] = output->data.f[i];
+    fruit_scores[i] = output->data.f[i];
   }
-  
-  RespondToDetection(digit_scores, kCategoryLabels);
+
+  RespondToDetection(fruit_scores, kCategoryLabels);
   vTaskDelay(1);
 }
 #endif
@@ -127,6 +127,9 @@ void run_inference(void *ptr) {
   }
 
   TfLiteTensor* output = interpreter->output(0);
+  printf("Input type: %s\n", TfLiteTypeGetName(input->type));
+  printf("Output type: %s\n", TfLiteTypeGetName(output->type));
+
   float fruit_scores[kCategoryCount];
   for (int i = 0; i < kCategoryCount; ++i) {
     fruit_scores[i] = output->data.f[i];

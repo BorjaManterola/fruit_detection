@@ -117,6 +117,14 @@ TfLiteStatus GetImage(int image_width, int image_height, int channels, float* im
   for (int i = 0; i < image_width * image_height; i++) {
     image_data[i] = ((uint8_t *) fb->buf)[i] ^ 0x80;
   }
+
+  // Print the image
+  for (int i = 0; i < image_height; i++) {
+    for (int j = 0; j < image_width; j++) {
+      std::cout << static_cast<int>(image_data[i * image_width + j]) << ", ";
+    }
+    std::cout << std::endl;
+  }
 #endif // DISPLAY_SUPPORT
 
   esp_camera_fb_return(fb);

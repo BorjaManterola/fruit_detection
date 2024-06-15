@@ -28,5 +28,4 @@ limitations under the License.
 // image is considered to contain a person.  This threshold may be adjusted for
 // particular applications.
 void RespondToDetection(float* fruit_score, const char* kCategoryLabels[]);
-
 #endif  // TENSORFLOW_LITE_MICRO_EXAMPLES_PERSON_DETECTION_DETECTION_RESPONDER_H_

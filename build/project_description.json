@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "person_detection",
-    "project_version":    "f7e8937-dirty",
+    "project_version":    "6cd287b-dirty",
     "project_path":       "/home/borjajuegos9/esp/projects_tf/fruit_detection",
     "idf_path":           "/home/borjajuegos9/esp/idf/esp-idf",
     "build_dir":          "/home/borjajuegos9/esp/projects_tf/fruit_detection/build",
@@ -2784,17 +2784,17 @@
             "managed_priv_reqs": [ "espressif__esp-tflite-micro", "espressif__esp32-camera" ],
             "include_dirs": []
         },
-        "espressif__esp32-camera": {
-            "alias": "idf::espressif__esp32-camera",
-            "target": "___idf_espressif__esp32-camera",
+        "espressif__esp-nn": {
+            "alias": "idf::espressif__esp-nn",
+            "target": "___idf_espressif__esp-nn",
             "prefix": "idf",
-            "dir": "/home/borjajuegos9/esp/projects_tf/fruit_detection/managed_components/espressif__esp32-camera",
-            "lib": "__idf_espressif__esp32-camera",
-            "reqs": [ "driver" ],
-            "priv_reqs": [ "freertos", "nvs_flash", "esp_timer" ],
+            "dir": "/home/borjajuegos9/esp/projects_tf/fruit_detection/managed_components/espressif__esp-nn",
+            "lib": "__idf_espressif__esp-nn",
+            "reqs": [],
+            "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "driver/include", "conversions/include" ]
+            "include_dirs": [ "include", "src/common" ]
         },
         "espressif__esp-tflite-micro": {
             "alias": "idf::espressif__esp-tflite-micro",
@@ -2808,17 +2808,17 @@
             "managed_priv_reqs": [ "espressif__esp-nn" ],
             "include_dirs": [ ".", "third_party/gemmlowp", "third_party/flatbuffers/include", "third_party/ruy", "third_party/kissfft", "signal/micro/kernels", "signal/src", "signal/src/kiss_fft_wrappers" ]
         },
-        "espressif__esp-nn": {
-            "alias": "idf::espressif__esp-nn",
-            "target": "___idf_espressif__esp-nn",
+        "espressif__esp32-camera": {
+            "alias": "idf::espressif__esp32-camera",
+            "target": "___idf_espressif__esp32-camera",
             "prefix": "idf",
-            "dir": "/home/borjajuegos9/esp/projects_tf/fruit_detection/managed_components/espressif__esp-nn",
-            "lib": "__idf_espressif__esp-nn",
-            "reqs": [],
-            "priv_reqs": [],
+            "dir": "/home/borjajuegos9/esp/projects_tf/fruit_detection/managed_components/espressif__esp32-camera",
+            "lib": "__idf_espressif__esp32-camera",
+            "reqs": [ "driver" ],
+            "priv_reqs": [ "freertos", "nvs_flash", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "src/common" ]
+            "include_dirs": [ "driver/include", "conversions/include" ]
         }
     },
     "debug_prefix_map_gdbinit": ""
