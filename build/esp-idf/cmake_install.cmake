@@ -529,6 +529,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/static_images/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/espressif__esp-nn/cmake_install.cmake")
 endif()
 

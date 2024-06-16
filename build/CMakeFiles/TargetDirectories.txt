@@ -799,6 +799,13 @@
 /home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/wifi_provisioning/CMakeFiles/install.dir
 /home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/wifi_provisioning/CMakeFiles/install/local.dir
 /home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/wifi_provisioning/CMakeFiles/install/strip.dir
+/home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/static_images/CMakeFiles/__idf_static_images.dir
+/home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/static_images/CMakeFiles/edit_cache.dir
+/home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/static_images/CMakeFiles/rebuild_cache.dir
+/home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/static_images/CMakeFiles/list_install_components.dir
+/home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/static_images/CMakeFiles/install.dir
+/home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/static_images/CMakeFiles/install/local.dir
+/home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/static_images/CMakeFiles/install/strip.dir
 /home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/espressif__esp-nn/CMakeFiles/__idf_espressif__esp-nn.dir
 /home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/espressif__esp-nn/CMakeFiles/edit_cache.dir
 /home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/espressif__esp-nn/CMakeFiles/rebuild_cache.dir

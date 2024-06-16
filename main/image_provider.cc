@@ -115,16 +115,21 @@ TfLiteStatus GetImage(int image_width, int image_height, int channels, float* im
   // We have initialised camera to grayscale
   // Just quantize to int8_t
   for (int i = 0; i < image_width * image_height; i++) {
-    image_data[i] = ((uint8_t *) fb->buf)[i] ^ 0x80;
+    // Convert the uint8_t pixel to float32
+    float pixel = static_cast<float>(((uint8_t *) fb->buf)[i]);
+    // Normalize the pixel data to 0-1 range if your model expects this range
+    image_data[i] = pixel / 255.0f;
   }
+  // for (int i = 0; i < image_width * image_height; i++) {
+  //   // Convert the uint8_t pixel to float32
+  //   float pixel = static_cast<float>(((uint8_t *) fb->buf)[i]);
+  //   // Normalize the pixel data to 0-1 range if your model expects this range
+  //   image_data[i] = pixel / 255.0f;
 
-  // Print the image
-  for (int i = 0; i < image_height; i++) {
-    for (int j = 0; j < image_width; j++) {
-      std::cout << static_cast<int>(image_data[i * image_width + j]) << ", ";
-    }
-    std::cout << std::endl;
-  }
+  //   // Print the pixel value to the terminal
+  //   printf("%f, ", image_data[i]);
+  // }
+  // printf("\n");
 #endif // DISPLAY_SUPPORT
 
   esp_camera_fb_return(fb);

@@ -114,19 +114,59 @@ void loop() {
 }
 #endif
 
+#if defined(COLLECT_CPU_STATS)
+  long long total_time = 0;
+  long long start_time = 0;
+  extern long long softmax_total_time;
+  extern long long dc_total_time;
+  extern long long conv_total_time;
+  extern long long fc_total_time;
+  extern long long pooling_total_time;
+  extern long long add_total_time;
+  extern long long mul_total_time;
+#endif
+
 void run_inference(void *ptr) {
+  /* Convert from uint8 picture data to int8 */
   uint8_t* uint8_ptr = (uint8_t*) ptr;
   for (int i = 0; i < kNumCols * kNumRows; i++) {
     input->data.f[i] = (float(uint8_ptr[i]) / 127.5) - 1;
-    printf("%f, ", input->data.f[i]);
+    printf("%d, ", input->data.uint8[i]);
   }
   printf("\n");
 
+#if defined(COLLECT_CPU_STATS)
+  long long start_time = esp_timer_get_time();
+#endif
+  // Run the model on this input and make sure it succeeds.
   if (kTfLiteOk != interpreter->Invoke()) {
     MicroPrintf("Invoke failed.");
   }
 
+#if defined(COLLECT_CPU_STATS)
+  long long total_time = (esp_timer_get_time() - start_time);
+  printf("Total time = %lld\n", total_time / 1000);
+  //printf("Softmax time = %lld\n", softmax_total_time / 1000);
+  printf("FC time = %lld\n", fc_total_time / 1000);
+  printf("DC time = %lld\n", dc_total_time / 1000);
+  printf("conv time = %lld\n", conv_total_time / 1000);
+  printf("Pooling time = %lld\n", pooling_total_time / 1000);
+  printf("add time = %lld\n", add_total_time / 1000);
+  printf("mul time = %lld\n", mul_total_time / 1000);
+
+  /* Reset times */
+  total_time = 0;
+  //softmax_total_time = 0;
+  dc_total_time = 0;
+  conv_total_time = 0;
+  fc_total_time = 0;
+  pooling_total_time = 0;
+  add_total_time = 0;
+  mul_total_time = 0;
+#endif
+
   TfLiteTensor* output = interpreter->output(0);
+
   printf("Input type: %s\n", TfLiteTypeGetName(input->type));
   printf("Output type: %s\n", TfLiteTypeGetName(output->type));
 
@@ -134,6 +174,6 @@ void run_inference(void *ptr) {
   for (int i = 0; i < kCategoryCount; ++i) {
     fruit_scores[i] = output->data.f[i];
   }
-  
+
   RespondToDetection(fruit_scores, kCategoryLabels);
 }

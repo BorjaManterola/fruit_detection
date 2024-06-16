@@ -1,3 +1,0 @@
--- IDF_TARGET is not set, guessed 'esp32' from sdkconfig '/home/borjajuegos9/esp/projects_tf/fruit_detection/sdkconfig'
--- Found Git: /usr/bin/git (found version "2.34.1") 
--- The C compiler identification is GNU 13.2.0
