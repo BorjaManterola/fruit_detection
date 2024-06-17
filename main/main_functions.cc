@@ -127,13 +127,11 @@ void loop() {
 #endif
 
 void run_inference(void *ptr) {
-  /* Convert from uint8 picture data to int8 */
-  uint8_t* uint8_ptr = (uint8_t*) ptr;
+  /* Convert from uint8 picture data to float */
   for (int i = 0; i < kNumCols * kNumRows; i++) {
-    input->data.f[i] = (float(uint8_ptr[i]) / 127.5) - 1;
-    printf("%d, ", input->data.uint8[i]);
+      input->data.f[i] = ((float*) ptr)[i];
+      printf("%f, ", input->data.f[i]);
   }
-  printf("\n");
 
 #if defined(COLLECT_CPU_STATS)
   long long start_time = esp_timer_get_time();

@@ -25,19 +25,19 @@
 #include "esp_timer.h"
 
 #define IMAGE_COUNT 10
-static uint8_t *image_database[IMAGE_COUNT];
+static float *image_database[IMAGE_COUNT];
 
 
-extern const uint8_t image0_start[]   asm("_binary_image0_start");
-extern const uint8_t image1_start[]   asm("_binary_image1_start");
-extern const uint8_t image2_start[]   asm("_binary_image2_start");
-extern const uint8_t image3_start[]   asm("_binary_image3_start");
-extern const uint8_t image4_start[]   asm("_binary_image4_start");
-extern const uint8_t image5_start[]   asm("_binary_image5_start");
-extern const uint8_t image6_start[]   asm("_binary_image6_start");
-extern const uint8_t image7_start[]   asm("_binary_image7_start");
-extern const uint8_t image8_start[]   asm("_binary_image8_start");
-extern const uint8_t image9_start[]   asm("_binary_image9_start");
+extern const float image0_start[]   asm("_binary_image0_start");
+extern const float image1_start[]   asm("_binary_image1_start");
+extern const float image2_start[]   asm("_binary_image2_start");
+extern const float image3_start[]   asm("_binary_image3_start");
+extern const float image4_start[]   asm("_binary_image4_start");
+extern const float image5_start[]   asm("_binary_image5_start");
+extern const float image6_start[]   asm("_binary_image6_start");
+extern const float image7_start[]   asm("_binary_image7_start");
+extern const float image8_start[]   asm("_binary_image8_start");
+extern const float image9_start[]   asm("_binary_image9_start");
 
 static const char *TAG = "[esp_cli]";
 
@@ -158,16 +158,16 @@ int esp_cli_register_cmds()
 
 static void image_database_init()
 {
-    image_database[0] = (uint8_t *) image0_start;
-    image_database[1] = (uint8_t *) image1_start;
-    image_database[2] = (uint8_t *) image2_start;
-    image_database[3] = (uint8_t *) image3_start;
-    image_database[4] = (uint8_t *) image4_start;
-    image_database[5] = (uint8_t *) image5_start;
-    image_database[6] = (uint8_t *) image6_start;
-    image_database[7] = (uint8_t *) image7_start;
-    image_database[8] = (uint8_t *) image8_start;
-    image_database[9] = (uint8_t *) image9_start;
+    image_database[0] = (float *) image0_start;
+    image_database[1] = (float *) image1_start;
+    image_database[2] = (float *) image2_start;
+    image_database[3] = (float *) image3_start;
+    image_database[4] = (float *) image4_start;
+    image_database[5] = (float *) image5_start;
+    image_database[6] = (float *) image6_start;
+    image_database[7] = (float *) image7_start;
+    image_database[8] = (float *) image8_start;
+    image_database[9] = (float *) image9_start;
 
 }
 
