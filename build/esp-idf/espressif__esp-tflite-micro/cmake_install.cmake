@@ -1,4 +1,4 @@
-# Install script for directory: /home/borjajuegos9/esp/projects_tf/fruit_detection/managed_components/espressif__esp-tflite-micro
+# Install script for directory: /home/borjajuegos9/esp/projects_tf/fruit_detection/components/espressif__esp-tflite-micro
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

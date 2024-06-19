@@ -64,7 +64,7 @@ void setup() {
 
   // Define MicroMutableOpResolver and add required operations
   static tflite::MicroMutableOpResolver<7> micro_op_resolver;
-  micro_op_resolver.AddQuantize();
+  micro_op_resolver.AddQuantize(); 
   micro_op_resolver.AddConv2D();
   micro_op_resolver.AddMaxPool2D();
   micro_op_resolver.AddReshape();
@@ -117,21 +117,23 @@ void loop() {
 #if defined(COLLECT_CPU_STATS)
   long long total_time = 0;
   long long start_time = 0;
-  extern long long softmax_total_time;
-  extern long long dc_total_time;
+  extern long long act_total_time;
+  extern long long q_total_time;
   extern long long conv_total_time;
-  extern long long fc_total_time;
   extern long long pooling_total_time;
-  extern long long add_total_time;
-  extern long long mul_total_time;
+  extern long long resh_total_time;
+  extern long long fc_total_time;
+  extern long long softmax_total_time;
+  extern long long dq_total_time;
 #endif
 
 void run_inference(void *ptr) {
   /* Convert from uint8 picture data to float */
   for (int i = 0; i < kNumCols * kNumRows; i++) {
       input->data.f[i] = ((float*) ptr)[i];
-      printf("%f, ", input->data.f[i]);
+      // printf("%f, ", input->data.f[i]);
   }
+  // printf("\n");
 
 #if defined(COLLECT_CPU_STATS)
   long long start_time = esp_timer_get_time();
@@ -143,35 +145,69 @@ void run_inference(void *ptr) {
 
 #if defined(COLLECT_CPU_STATS)
   long long total_time = (esp_timer_get_time() - start_time);
-  printf("Total time = %lld\n", total_time / 1000);
-  //printf("Softmax time = %lld\n", softmax_total_time / 1000);
-  printf("FC time = %lld\n", fc_total_time / 1000);
-  printf("DC time = %lld\n", dc_total_time / 1000);
-  printf("conv time = %lld\n", conv_total_time / 1000);
-  printf("Pooling time = %lld\n", pooling_total_time / 1000);
-  printf("add time = %lld\n", add_total_time / 1000);
-  printf("mul time = %lld\n", mul_total_time / 1000);
+  printf("Quantize time = %lld\n", q_total_time);
+  printf("Conv2D time = %lld\n", conv_total_time);
+  printf("MaxPool2D time = %lld\n", pooling_total_time);
+  printf("Reshape time = %lld\n", resh_total_time);
+  printf("FullyConnected time = %lld\n", fc_total_time);
+  printf("Softmax time = %lld\n", softmax_total_time);
+  printf("Dequantize time = %lld\n", dq_total_time);
+  printf("Total time = %lld\n\n", total_time);
+
+  // Calculate operational intensity for each task
+  double quantize_operational_intensity = 1387 / (double)46080;
+  double conv2d_operational_intensity = 144 / (double)(150800+104880+59776);
+  double maxpool2d_operational_intensity = 145 / (double)(176720+80288+32000);
+  double reshape_operational_intensity = 395 / (double)12808;
+  double fullyconnected_operational_intensity = 125 / (double)(1644080+33664+527);
+  double softmax_operational_intensity = 1219 / (double)6;
+  double dequantize_operational_intensity = 442 / (double)15;
+
+  // Calculate Performance for each task
+  double quantize_performance = 1387 / (q_total_time / 1000000.0);
+  double conv2d_performance = 144 / (conv_total_time / 1000000.0);
+  double maxpool2d_performance = 145 / (pooling_total_time / 1000000.0);
+  double reshape_performance = 395 / (resh_total_time / 1000000.0);
+  double fullyconnected_performance = 125 / (fc_total_time / 1000000.0);
+  double softmax_performance = 1219 / (softmax_total_time / 1000000.0);
+  double dequantize_performance = 442 / (dq_total_time / 1000000.0);
+
+  printf("Quantize Operational Intensity = %f\n", quantize_operational_intensity);
+  printf("Conv2D Operational Intensity = %f\n", conv2d_operational_intensity);
+  printf("MaxPool2D Operational Intensity = %f\n", maxpool2d_operational_intensity);
+  printf("Reshape Operational Intensity = %f\n", reshape_operational_intensity);
+  printf("FullyConnected Operational Intensity = %f\n", fullyconnected_operational_intensity);
+  printf("Softmax Operational Intensity = %f\n", softmax_operational_intensity);
+  printf("Dequantize Operational Intensity = %f\n\n", dequantize_operational_intensity);
+
+  printf("Quantize Performance = %f\n", quantize_performance);
+  printf("Conv2D Performance = %f\n", conv2d_performance);
+  printf("MaxPool2D Performance = %f\n", maxpool2d_performance);
+  printf("Reshape Performance = %f\n", reshape_performance);
+  printf("FullyConnected Performance = %f\n", fullyconnected_performance);
+  printf("Softmax Performance = %f\n", softmax_performance);
+  printf("Dequantize Performance = %f\n\n", dequantize_performance);
 
   /* Reset times */
   total_time = 0;
-  //softmax_total_time = 0;
-  dc_total_time = 0;
+  act_total_time = 0;
+  q_total_time = 0;
   conv_total_time = 0;
-  fc_total_time = 0;
   pooling_total_time = 0;
-  add_total_time = 0;
-  mul_total_time = 0;
+  resh_total_time = 0;
+  fc_total_time = 0;
+  softmax_total_time = 0;
+  dq_total_time = 0;
 #endif
 
   TfLiteTensor* output = interpreter->output(0);
 
-  printf("Input type: %s\n", TfLiteTypeGetName(input->type));
-  printf("Output type: %s\n", TfLiteTypeGetName(output->type));
+  // printf("Input type: %s\n", TfLiteTypeGetName(input->type));
+  // printf("Output type: %s\n", TfLiteTypeGetName(output->type));
 
   float fruit_scores[kCategoryCount];
   for (int i = 0; i < kCategoryCount; ++i) {
     fruit_scores[i] = output->data.f[i];
   }
-
   RespondToDetection(fruit_scores, kCategoryLabels);
 }
