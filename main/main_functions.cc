@@ -15,6 +15,8 @@
 #include "esp_main.h"
 #include "esp_psram.h"
 
+#define MCU_POWER 0.264
+
 namespace {
 const tflite::Model* model = nullptr;
 tflite::MicroInterpreter* interpreter = nullptr;
@@ -145,48 +147,23 @@ void run_inference(void *ptr) {
 
 #if defined(COLLECT_CPU_STATS)
   long long total_time = (esp_timer_get_time() - start_time);
-  printf("Quantize time = %lld\n", q_total_time);
-  printf("Conv2D time = %lld\n", conv_total_time);
-  printf("MaxPool2D time = %lld\n", pooling_total_time);
-  printf("Reshape time = %lld\n", resh_total_time);
-  printf("FullyConnected time = %lld\n", fc_total_time);
-  printf("Softmax time = %lld\n", softmax_total_time);
-  printf("Dequantize time = %lld\n", dq_total_time);
-  printf("Total time = %lld\n\n", total_time);
+  printf("Quantize time = %lld [µs]\n", q_total_time);
+  printf("Conv2D time = %lld [µs]\n", conv_total_time);
+  printf("MaxPool2D time = %lld [µs]\n", pooling_total_time);
+  printf("Reshape time = %lld [µs]\n", resh_total_time);
+  printf("FullyConnected time = %lld [µs]\n", fc_total_time);
+  printf("Softmax time = %lld [µs]\n", softmax_total_time);
+  printf("Dequantize time = %lld [µs]\n", dq_total_time);
+  printf("Total time = %lld [µs]\n\n", total_time);
 
-  // Calculate operational intensity for each task
-  double quantize_operational_intensity = 1387 / (double)46080;
-  double conv2d_operational_intensity = 144 / (double)(150800+104880+59776);
-  double maxpool2d_operational_intensity = 145 / (double)(176720+80288+32000);
-  double reshape_operational_intensity = 395 / (double)12808;
-  double fullyconnected_operational_intensity = 125 / (double)(1644080+33664+527);
-  double softmax_operational_intensity = 1219 / (double)6;
-  double dequantize_operational_intensity = 442 / (double)15;
-
-  // Calculate Performance for each task
-  double quantize_performance = 1387 / (q_total_time / 1000000.0);
-  double conv2d_performance = 144 / (conv_total_time / 1000000.0);
-  double maxpool2d_performance = 145 / (pooling_total_time / 1000000.0);
-  double reshape_performance = 395 / (resh_total_time / 1000000.0);
-  double fullyconnected_performance = 125 / (fc_total_time / 1000000.0);
-  double softmax_performance = 1219 / (softmax_total_time / 1000000.0);
-  double dequantize_performance = 442 / (dq_total_time / 1000000.0);
-
-  printf("Quantize Operational Intensity = %f\n", quantize_operational_intensity);
-  printf("Conv2D Operational Intensity = %f\n", conv2d_operational_intensity);
-  printf("MaxPool2D Operational Intensity = %f\n", maxpool2d_operational_intensity);
-  printf("Reshape Operational Intensity = %f\n", reshape_operational_intensity);
-  printf("FullyConnected Operational Intensity = %f\n", fullyconnected_operational_intensity);
-  printf("Softmax Operational Intensity = %f\n", softmax_operational_intensity);
-  printf("Dequantize Operational Intensity = %f\n\n", dequantize_operational_intensity);
-
-  printf("Quantize Performance = %f\n", quantize_performance);
-  printf("Conv2D Performance = %f\n", conv2d_performance);
-  printf("MaxPool2D Performance = %f\n", maxpool2d_performance);
-  printf("Reshape Performance = %f\n", reshape_performance);
-  printf("FullyConnected Performance = %f\n", fullyconnected_performance);
-  printf("Softmax Performance = %f\n", softmax_performance);
-  printf("Dequantize Performance = %f\n\n", dequantize_performance);
+  printf("Quantize energy = %f [J]\n", MCU_POWER * (q_total_time / 1000000.0));
+  printf("Conv2D energy = %f [J]\n", MCU_POWER * (conv_total_time / 1000000.0));
+  printf("MaxPool2D energy = %f [J]\n", MCU_POWER * (pooling_total_time / 1000000.0));
+  printf("Reshape energy = %f [J]\n", MCU_POWER * (resh_total_time / 1000000.0));
+  printf("FullyConnected energy = %f [J]\n", MCU_POWER * (fc_total_time / 1000000.0));
+  printf("Softmax energy = %f [J]\n", MCU_POWER * (softmax_total_time / 1000000.0));
+  printf("Dequantize energy = %f [J]\n", MCU_POWER * (dq_total_time / 1000000.0));
+  printf("Total energy = %f [J]\n\n", MCU_POWER * (total_time / 1000000.0));
 
   /* Reset times */
   total_time = 0;

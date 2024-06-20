@@ -1,0 +1,158 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/borjajuegos9/esp/projects_tf/fruit_detection/build/bootloader/esp-idf/esptool_py && /home/borjajuegos9/esp/idf-tools/python_env/idf5.4_py3.10_env/bin/python /home/borjajuegos9/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/borjajuegos9/esp/projects_tf/fruit_detection/build/bootloader/bootloader.bin
+Bootloader binary size 0x6f50 bytes. 0xb0 bytes (1%) free.
+[2/8] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj
+In file included from /home/borjajuegos9/esp/projects_tf/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/tflite_bridge/flatbuffer_conversions_bridge.h:19,
+                 from /home/borjajuegos9/esp/projects_tf/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:26,
+                 from /home/borjajuegos9/esp/projects_tf/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:26,
+                 from /home/borjajuegos9/esp/projects_tf/fruit_detection/main/main_functions.cc:6:
+/home/borjajuegos9/esp/projects_tf/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h: In member function 'T* tflite::BuiltinDataAllocator::AllocatePOD()':
+/home/borjajuegos9/esp/projects_tf/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:46:24: warning: 'template<class _Tp> struct std::is_pod' is deprecated: use 'is_standard_layout && is_trivial' instead [-Wdeprecated-declarations]
+   46 |     static_assert(std::is_pod<T>::value, "Builtin data structure must be POD.");
+      |                        ^~~~~~
+In file included from /home/borjajuegos9/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/stl_pair.h:60,
+                 from /home/borjajuegos9/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/utility:69,
+                 from /home/borjajuegos9/esp/projects_tf/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/core/c/common.h:1463,
+                 from /home/borjajuegos9/esp/projects_tf/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/c/common.h:31,
+                 from /home/borjajuegos9/esp/projects_tf/fruit_detection/main/detection_responder.h:22,
+                 from /home/borjajuegos9/esp/projects_tf/fruit_detection/main/main_functions.cc:2:
+/home/borjajuegos9/esp/idf-tools/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/type_traits:819:5: note: declared here
+  819 |     is_pod
+      |     ^~~~~~
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable person_detection.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.8.dev3
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/borjajuegos9/esp/projects_tf/fruit_detection/build/person_detection.bin
+[7/8] cd /home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/esptool_py && /home/borjajuegos9/esp/idf-tools/python_env/idf5.4_py3.10_env/bin/python /home/borjajuegos9/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/borjajuegos9/esp/projects_tf/fruit_detection/build/partition_table/partition-table.bin /home/borjajuegos9/esp/projects_tf/fruit_detection/build/person_detection.bin
+person_detection.bin binary size 0x24ec30 bytes. Smallest app partition is 0x300000 bytes. 0xb13d0 bytes (23%) free.
+[7/8] cd /home/borjajuegos9/esp/idf/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/borjajuegos9/esp/idf/esp-idf -D "SERIAL_TOOL=/home/borjajuegos9/esp/idf-tools/python_env/idf5.4_py3.10_env/bin/python;;/home/borjajuegos9/esp/idf/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/borjajuegos9/esp/projects_tf/fruit_detection/build -P /home/borjajuegos9/esp/idf/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size detect 0x1000 bootloader/bootloader.bin 0x10000 person_detection.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev3
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, BLK3 partially reserved, Coding Scheme 3/4
+Crystal is 40MHz
+MAC: 84:0d:8e:19:b1:44
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Auto-detected Flash size: 4MB
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0025efff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 28496 bytes to 17355...
+Writing at 0x00001000... (50 %)
+Writing at 0x00007a4a... (100 %)
+Wrote 28496 bytes (17355 compressed) at 0x00001000 in 0.7 seconds (effective 338.1 kbit/s)...
+Hash of data verified.
+Compressed 2419760 bytes to 1480318...
+Writing at 0x00010000... (1 %)
+Writing at 0x0001cb59... (2 %)
+Writing at 0x00020e77... (3 %)
+Writing at 0x00025edd... (4 %)
+Writing at 0x0002bbf4... (5 %)
+Writing at 0x00031291... (6 %)
+Writing at 0x0003737c... (7 %)
+Writing at 0x0003d168... (8 %)
+Writing at 0x000430be... (9 %)
+Writing at 0x00048e55... (10 %)
+Writing at 0x0004eb24... (12 %)
+Writing at 0x00054850... (13 %)
+Writing at 0x0005a6e6... (14 %)
+Writing at 0x0006013b... (15 %)
+Writing at 0x00065a77... (16 %)
+Writing at 0x0006b726... (17 %)
+Writing at 0x000713bc... (18 %)
+Writing at 0x000770a5... (19 %)
+Writing at 0x0007cc4b... (20 %)
+Writing at 0x000829bb... (21 %)
+Writing at 0x000884ff... (23 %)
+Writing at 0x0008dd12... (24 %)
+Writing at 0x0009415c... (25 %)
+Writing at 0x0009a054... (26 %)
+Writing at 0x0009f85e... (27 %)
+Writing at 0x000a52eb... (28 %)
+Writing at 0x000aaf30... (29 %)
+Writing at 0x000b0906... (30 %)
+Writing at 0x000b642b... (31 %)
+Writing at 0x000bc0db... (32 %)
+Writing at 0x000c1903... (34 %)
+Writing at 0x000c7673... (35 %)
+Writing at 0x000ccd5b... (36 %)
+Writing at 0x000d24c5... (37 %)
+Writing at 0x000d825d... (38 %)
+Writing at 0x000ddd14... (39 %)
+Writing at 0x000e35f8... (40 %)
+Writing at 0x000e9261... (41 %)
+Writing at 0x000ef5b4... (42 %)
+Writing at 0x000f55e1... (43 %)
+Writing at 0x000fb221... (45 %)
+Writing at 0x00100628... (46 %)
+Writing at 0x0010615f... (47 %)
+Writing at 0x0010baca... (48 %)
+Writing at 0x0011173d... (49 %)
+Writing at 0x0011728e... (50 %)
+Writing at 0x0011d151... (51 %)
+Writing at 0x00122c3b... (52 %)
+Writing at 0x00128d45... (53 %)
+Writing at 0x0012eb39... (54 %)
+Writing at 0x00134b51... (56 %)
+Writing at 0x0013aa9f... (57 %)
+Writing at 0x001405cf... (58 %)
+Writing at 0x00145e80... (59 %)
+Writing at 0x0014b9c6... (60 %)
+Writing at 0x00151674... (61 %)
+Writing at 0x00157456... (62 %)
+Writing at 0x0015d0c6... (63 %)
+Writing at 0x00162964... (64 %)
+Writing at 0x001684c5... (65 %)
+Writing at 0x0016de83... (67 %)
+Writing at 0x00174256... (68 %)
+Writing at 0x0017a1b2... (69 %)
+Writing at 0x0017f8ab... (70 %)
+Writing at 0x001855de... (71 %)
+Writing at 0x0018b380... (72 %)
+Writing at 0x00190eec... (73 %)
+Writing at 0x00196bcf... (74 %)
+Writing at 0x0019c47e... (75 %)
+Writing at 0x001a247e... (76 %)
+Writing at 0x001a824e... (78 %)
+Writing at 0x001ad90b... (79 %)
+Writing at 0x001b2fc4... (80 %)
+Writing at 0x001b7c51... (81 %)
+Writing at 0x001bdcdf... (82 %)
+Writing at 0x001cd313... (83 %)
+Writing at 0x001e7107... (84 %)
+Writing at 0x001feaf7... (85 %)
+Writing at 0x0020c5bf... (86 %)
+Writing at 0x00218927... (87 %)
+Writing at 0x00220940... (89 %)
+Writing at 0x00225f12... (90 %)
+Writing at 0x0022b630... (91 %)
+Writing at 0x00230844... (92 %)
+Writing at 0x00235980... (93 %)
+Writing at 0x0023af04... (94 %)
+Writing at 0x00242ad9... (95 %)
+Writing at 0x0024b295... (96 %)
+Writing at 0x00251615... (97 %)
+Writing at 0x00256f6f... (98 %)
+Writing at 0x0025cb16... (100 %)
+Wrote 2419760 bytes (1480318 compressed) at 0x00010000 in 33.4 seconds (effective 579.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.0 seconds (effective 622.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
