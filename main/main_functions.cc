@@ -156,14 +156,14 @@ void run_inference(void *ptr) {
   printf("Dequantize time = %lld [µs]\n", dq_total_time);
   printf("Total time = %lld [µs]\n\n", total_time);
 
-  printf("Quantize energy = %f [J]\n", MCU_POWER * (q_total_time / 1000000.0));
-  printf("Conv2D energy = %f [J]\n", MCU_POWER * (conv_total_time / 1000000.0));
-  printf("MaxPool2D energy = %f [J]\n", MCU_POWER * (pooling_total_time / 1000000.0));
-  printf("Reshape energy = %f [J]\n", MCU_POWER * (resh_total_time / 1000000.0));
-  printf("FullyConnected energy = %f [J]\n", MCU_POWER * (fc_total_time / 1000000.0));
-  printf("Softmax energy = %f [J]\n", MCU_POWER * (softmax_total_time / 1000000.0));
-  printf("Dequantize energy = %f [J]\n", MCU_POWER * (dq_total_time / 1000000.0));
-  printf("Total energy = %f [J]\n\n", MCU_POWER * (total_time / 1000000.0));
+  // printf("Quantize energy = %f [J]\n", MCU_POWER * (q_total_time / 1000000.0));
+  // printf("Conv2D energy = %f [J]\n", MCU_POWER * (conv_total_time / 1000000.0));
+  // printf("MaxPool2D energy = %f [J]\n", MCU_POWER * (pooling_total_time / 1000000.0));
+  // printf("Reshape energy = %f [J]\n", MCU_POWER * (resh_total_time / 1000000.0));
+  // printf("FullyConnected energy = %f [J]\n", MCU_POWER * (fc_total_time / 1000000.0));
+  // printf("Softmax energy = %f [J]\n", MCU_POWER * (softmax_total_time / 1000000.0));
+  // printf("Dequantize energy = %f [J]\n", MCU_POWER * (dq_total_time / 1000000.0));
+  // printf("Total energy = %f [J]\n\n", MCU_POWER * (total_time / 1000000.0));
 
   /* Reset times */
   total_time = 0;
