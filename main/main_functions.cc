@@ -147,11 +147,11 @@ void run_inference(void *ptr) {
 
 #if defined(COLLECT_CPU_STATS)
   long long total_time = (esp_timer_get_time() - start_time);
-  printf("Quantize time = %lld [µs]\n", q_total_time);
-  printf("Conv2D time = %lld [µs]\n", conv_total_time);
-  printf("MaxPool2D time = %lld [µs]\n", pooling_total_time);
+  printf("\nQuantize time = %lld [µs]\n", q_total_time);
+  printf("Conv2D total time = %lld [µs]\n", conv_total_time);
+  printf("MaxPool2D total time = %lld [µs]\n", pooling_total_time);
   printf("Reshape time = %lld [µs]\n", resh_total_time);
-  printf("FullyConnected time = %lld [µs]\n", fc_total_time);
+  printf("FullyConnected total time = %lld [µs]\n", fc_total_time);
   printf("Softmax time = %lld [µs]\n", softmax_total_time);
   printf("Dequantize time = %lld [µs]\n", dq_total_time);
   printf("Total time = %lld [µs]\n\n", total_time);

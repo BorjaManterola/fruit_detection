@@ -90,6 +90,7 @@ static TfLiteStatus Prepare(TfLiteContext* context, TfLiteNode* node) {
   const int output_width = output->dims->data[2];
   const int output_height = output->dims->data[1];
 
+  long long start_time = esp_timer_get_time();
   // Dynamically allocate per-channel quantization parameters.
   const int num_channels = filter->dims->data[kConvQuantizedDimension];
   data->op_data.per_channel_output_multiplier =
@@ -161,7 +162,6 @@ static TfLiteStatus Prepare(TfLiteContext* context, TfLiteNode* node) {
   micro_context->DeallocateTempTfLiteTensor(output);
   micro_context->DeallocateTempTfLiteTensor(input);
   micro_context->DeallocateTempTfLiteTensor(filter);
-
   return kTfLiteOk;
 }
 
@@ -394,7 +394,7 @@ static TfLiteStatus Eval(TfLiteContext* context, TfLiteNode* node) {
   }
   long long time_this_instance = esp_timer_get_time() - start_time;
   conv_total_time += time_this_instance;
-  // printf("time this conv instance: %llu\n", time_this_instance / 1000);
+  printf("Time this Conv2D instance: %llu [µs]\n", time_this_instance);
   return kTfLiteOk;
 }
 
