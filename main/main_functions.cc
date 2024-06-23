@@ -14,8 +14,6 @@
 #include <esp_log.h>
 #include "esp_main.h"
 #include "esp_psram.h"
-#include "esp_camera.h"
-#include "image_provider.h"
 
 #define MCU_POWER 0.264 / 2
 
@@ -58,8 +56,6 @@ void setup() {
     return;
   }
 
-  printf("hola\n");
-
   // Allocate tensor arena in PSRAM
   if (tensor_arena == NULL) {
     tensor_arena = (uint8_t *) heap_caps_malloc(kTensorArenaSize, MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
@@ -68,7 +64,6 @@ void setup() {
     printf("Couldn't allocate memory of %d bytes\n", kTensorArenaSize);
     return;
   }
-  printf("hola2\n");
   printf("Free heap size after allocation: %d\n", heap_caps_get_free_size(MALLOC_CAP_8BIT));
   printf("Free PSRAM size after allocation: %d\n", heap_caps_get_free_size(MALLOC_CAP_SPIRAM));
 
@@ -103,21 +98,11 @@ void setup() {
 #endif
 }
 
-extern "C" camera_fb_t* GetLastFrame(); // Asegúrate de incluir el archivo de cabecera adecuado en lugar de usar extern "C" si es posible
-
 #ifndef CLI_ONLY_INFERENCE
 void loop() {
-  if (kTfLiteOk != GetImage(kNumCols, kNumRows, kNumChannels, input->data.int8)) {
-    MicroPrintf("Image capture failed.");
-  }
 
-  camera_fb_t* fb = GetLastFrame();
-  if (fb != nullptr) {
-    for (int i = 0; i < kNumCols * kNumRows; i++) {
-      input->data.f[i] = ((uint8_t *) fb->buf)[i] / 255.0f;
-      printf("%f, ", input->data.f[i]);
-    }
-    printf("\n");
+  if (kTfLiteOk != GetImage(kNumCols, kNumRows, kNumChannels, input->data.f)) {
+    MicroPrintf("Image capture failed.");
   }
 
   if (kTfLiteOk != interpreter->Invoke()) {
@@ -125,11 +110,14 @@ void loop() {
   }
 
   TfLiteTensor* output = interpreter->output(0);
+
+  printf("Input type: %s\n", TfLiteTypeGetName(input->type));
+  printf("Output type: %s\n", TfLiteTypeGetName(output->type));
+
   float fruit_scores[kCategoryCount];
   for (int i = 0; i < kCategoryCount; ++i) {
     fruit_scores[i] = output->data.f[i];
   }
-
   RespondToDetection(fruit_scores, kCategoryLabels);
   vTaskDelay(5000 / portTICK_RATE_MS);
 }
@@ -148,6 +136,7 @@ void loop() {
   extern long long dq_total_time;
 #endif
 
+#ifdef CLI_ONLY_INFERENCE
 void run_inference(void *ptr) {
   /* Convert from uint8 picture data to float */
   for (int i = 0; i < kNumCols * kNumRows; i++) {
@@ -163,6 +152,11 @@ void run_inference(void *ptr) {
   if (kTfLiteOk != interpreter->Invoke()) {
     MicroPrintf("Invoke failed.");
   }
+
+  for (int i = 0; i < kNumCols * kNumRows; i++) {
+      printf("%f, ", input->data.f[i]);
+  }
+  printf("\n");
 
 #if defined(COLLECT_CPU_STATS)
   long long total_time = (esp_timer_get_time() - start_time);
@@ -207,3 +201,4 @@ void run_inference(void *ptr) {
   }
   RespondToDetection(fruit_scores, kCategoryLabels);
 }
+#endif

@@ -1,0 +1,31 @@
+�et.Rչ ��0���'�:��H�
+r�W��LBP���O�%ME�JI��t��E3B�A%��P*�e1��%�O�JH(�nV����:�b����P'�5�,k�E��i0��)�d.�¸��d�v��A0��A_��:��0,}d��x�b���d��x�j
+m�:�R�	���k���1��+�i0ͦ�A0&b������4�!�+�:��0��0����i1�͓j
+l+�:��00��°��n��HȽa�'��00���4��n�S�6Ca���y��Ѱ6��H�[0;32mI (28) boot: ESP-IDF v5.4-dev-421-g4523f2d674 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Jun 22 2024 18:07:54[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (48) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b2c38h (1780792) map[0m
+[0;32mI (565) esp_image: segment 1: paddr=001c2c60 vaddr=3ffb0000 size=0336ch ( 13164) load[0m
+[0;32mI (569) esp_image: segment 2: paddr=001c5fd4 vaddr=40080000 size=0a044h ( 41028) load[0m
+[0;32mI (583) esp_image: segment 3: paddr=001d0020 vaddr=400d0020 size=2fa3ch (195132) map[0m
+[0;32mI (633) esp_image: segment 4: paddr=001ffa64 vaddr=4008a044 size=06a84h ( 27268) load[0m
+[0;32mI (650) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (650) boot: Disabling RNG early entropy source...[0m
+[0;32mI (662) cpu_start: Multicore app[0m
+[0;32mI (662) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (662) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (664) esp_psram: Speed: 80MHz[0m
+[0;32mI (668) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (676) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
