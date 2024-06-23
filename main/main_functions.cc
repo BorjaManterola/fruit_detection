@@ -14,8 +14,10 @@
 #include <esp_log.h>
 #include "esp_main.h"
 #include "esp_psram.h"
+#include "esp_camera.h"
+#include "image_provider.h"
 
-#define MCU_POWER 0.264
+#define MCU_POWER 0.264 / 2
 
 namespace {
 const tflite::Model* model = nullptr;
@@ -26,6 +28,10 @@ TfLiteTensor* input = nullptr;
 constexpr int scratchBufSize = 40 * 1024;
 #else
 constexpr int scratchBufSize = 0;
+#endif
+
+#ifndef portTICK_RATE_MS
+#define portTICK_RATE_MS portTICK_PERIOD_MS
 #endif
 
 static int kTensorArenaSize = 176 * 1024 + scratchBufSize;  // Reduced size for testing
@@ -52,6 +58,8 @@ void setup() {
     return;
   }
 
+  printf("hola\n");
+
   // Allocate tensor arena in PSRAM
   if (tensor_arena == NULL) {
     tensor_arena = (uint8_t *) heap_caps_malloc(kTensorArenaSize, MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
@@ -60,7 +68,7 @@ void setup() {
     printf("Couldn't allocate memory of %d bytes\n", kTensorArenaSize);
     return;
   }
-
+  printf("hola2\n");
   printf("Free heap size after allocation: %d\n", heap_caps_get_free_size(MALLOC_CAP_8BIT));
   printf("Free PSRAM size after allocation: %d\n", heap_caps_get_free_size(MALLOC_CAP_SPIRAM));
 
@@ -95,10 +103,21 @@ void setup() {
 #endif
 }
 
+extern "C" camera_fb_t* GetLastFrame(); // Asegúrate de incluir el archivo de cabecera adecuado en lugar de usar extern "C" si es posible
+
 #ifndef CLI_ONLY_INFERENCE
 void loop() {
-  if (kTfLiteOk != GetImage(kNumCols, kNumRows, kNumChannels, input->data.f)) {
+  if (kTfLiteOk != GetImage(kNumCols, kNumRows, kNumChannels, input->data.int8)) {
     MicroPrintf("Image capture failed.");
+  }
+
+  camera_fb_t* fb = GetLastFrame();
+  if (fb != nullptr) {
+    for (int i = 0; i < kNumCols * kNumRows; i++) {
+      input->data.f[i] = ((uint8_t *) fb->buf)[i] / 255.0f;
+      printf("%f, ", input->data.f[i]);
+    }
+    printf("\n");
   }
 
   if (kTfLiteOk != interpreter->Invoke()) {
@@ -112,7 +131,7 @@ void loop() {
   }
 
   RespondToDetection(fruit_scores, kCategoryLabels);
-  vTaskDelay(1);
+  vTaskDelay(5000 / portTICK_RATE_MS);
 }
 #endif
 
@@ -147,14 +166,14 @@ void run_inference(void *ptr) {
 
 #if defined(COLLECT_CPU_STATS)
   long long total_time = (esp_timer_get_time() - start_time);
-  printf("\nQuantize time = %lld [µs]\n", q_total_time);
-  printf("Conv2D total time = %lld [µs]\n", conv_total_time);
-  printf("MaxPool2D total time = %lld [µs]\n", pooling_total_time);
-  printf("Reshape time = %lld [µs]\n", resh_total_time);
-  printf("FullyConnected total time = %lld [µs]\n", fc_total_time);
-  printf("Softmax time = %lld [µs]\n", softmax_total_time);
-  printf("Dequantize time = %lld [µs]\n", dq_total_time);
-  printf("Total time = %lld [µs]\n\n", total_time);
+  printf("\nQuantize time = %.3f [ms]\n", q_total_time / 1000.0);
+  printf("Conv2D total time = %.3f [ms]\n", conv_total_time / 1000.0);
+  printf("MaxPool2D total time = %.3f [ms]\n", pooling_total_time / 1000.0);
+  printf("Reshape time = %.3f [ms]\n", resh_total_time / 1000.0);
+  printf("FullyConnected total time = %.3f [ms]\n", fc_total_time / 1000.0);
+  printf("Softmax time = %.3f [ms]\n", softmax_total_time / 1000.0);
+  printf("Dequantize time = %.3f [ms]\n", dq_total_time / 1000.0);
+  printf("Total time = %.3f [ms]\n\n", total_time / 1000.0);
 
   // printf("Quantize energy = %f [J]\n", MCU_POWER * (q_total_time / 1000000.0));
   // printf("Conv2D energy = %f [J]\n", MCU_POWER * (conv_total_time / 1000000.0));

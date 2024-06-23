@@ -394,7 +394,7 @@ static TfLiteStatus Eval(TfLiteContext* context, TfLiteNode* node) {
   }
   long long time_this_instance = esp_timer_get_time() - start_time;
   conv_total_time += time_this_instance;
-  printf("Time this Conv2D instance: %llu [µs]\n", time_this_instance);
+  // printf("Time this Conv2D instance: %llu [µs]\n", time_this_instance);
   return kTfLiteOk;
 }
 

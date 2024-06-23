@@ -62,7 +62,7 @@ void RespondToDetection(float* fruit_score, const char* kCategoryLabels[]) {
   // Find the fruit with the highest score.
   float max_score = 0;
   int max_score_index = 0;
-  for (int i = 0; i < 3; ++i) {
+  for (int i = 0; i < 4; ++i) {
     if (fruit_score[i] > max_score) {
       max_score = fruit_score[i];
       max_score_index = i;
@@ -71,5 +71,5 @@ void RespondToDetection(float* fruit_score, const char* kCategoryLabels[]) {
 
   // Log the detected fruit.
   MicroPrintf("Detected fruit: %s", kCategoryLabels[max_score_index]);
-  MicroPrintf("Manzana: %f, Banana: %f, Limon: %f", fruit_score[0], fruit_score[1], fruit_score[2]);
+  MicroPrintf("Apple: %f, Banana: %f, Lemon: %f, Other: %f", fruit_score[0], fruit_score[1], fruit_score[2], fruit_score[3]);
 }

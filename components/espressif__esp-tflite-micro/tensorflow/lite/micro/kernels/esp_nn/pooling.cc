@@ -183,7 +183,7 @@ TfLiteStatus AverageEval(TfLiteContext* context, TfLiteNode* node) {
   }
   long long time_this_instance = esp_timer_get_time() - start_time;
   pooling_total_time += time_this_instance;
-  printf("Time this MaxPool2D instance: %llu [µs]\n", time_this_instance);
+  // printf("Time this MaxPool2D instance: %llu [µs]\n", time_this_instance);
   return kTfLiteOk;
 }
 
@@ -224,7 +224,7 @@ TfLiteStatus MaxEval(TfLiteContext* context, TfLiteNode* node) {
   }
   long long time_this_instance = esp_timer_get_time() - start_time;
   pooling_total_time += time_this_instance;
-  printf("Time this MaxPool2D instance: %llu [µs]\n", time_this_instance);
+  // printf("Time this MaxPool2D instance: %llu [µs]\n", time_this_instance);
   return kTfLiteOk;
 }
 

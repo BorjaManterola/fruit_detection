@@ -18,6 +18,7 @@ limitations under the License.
 
 #include "tensorflow/lite/c/common.h"
 #include "tensorflow/lite/micro/micro_log.h"
+#include "esp_camera.h"
 
 // This is an abstraction around an image source like a camera, and is
 // expected to return 8-bit sample data.  The assumption is that this will be
@@ -38,7 +39,17 @@ limitations under the License.
 // Returns buffer to be displayed
 void *image_provider_get_display_buf();
 
-TfLiteStatus GetImage(int image_width, int image_height, int channels, float* image_data);
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+camera_fb_t* GetLastFrame();
+
+#ifdef __cplusplus
+}
+#endif
+
+TfLiteStatus GetImage(int image_width, int image_height, int channels, int8_t* image_data);
 
 TfLiteStatus InitCamera();
 

@@ -1,0 +1,141 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/borjajuegos9/esp/projects_tf/fruit_detection/build/bootloader/esp-idf/esptool_py && /home/borjajuegos9/esp/idf-tools/python_env/idf5.4_py3.10_env/bin/python /home/borjajuegos9/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/borjajuegos9/esp/projects_tf/fruit_detection/build/bootloader/bootloader.bin
+Bootloader binary size 0x6f50 bytes. 0xb0 bytes (1%) free.
+[2/8] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/person_detect_model_data.cc.obj
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable person_detection.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.8.dev3
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/borjajuegos9/esp/projects_tf/fruit_detection/build/person_detection.bin
+[7/8] cd /home/borjajuegos9/esp/projects_tf/fruit_detection/build/esp-idf/esptool_py && /home/borjajuegos9/esp/idf-tools/python_env/idf5.4_py3.10_env/bin/python /home/borjajuegos9/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/borjajuegos9/esp/projects_tf/fruit_detection/build/partition_table/partition-table.bin /home/borjajuegos9/esp/projects_tf/fruit_detection/build/person_detection.bin
+person_detection.bin binary size 0x24ebf0 bytes. Smallest app partition is 0x300000 bytes. 0xb1410 bytes (23%) free.
+[7/8] cd /home/borjajuegos9/esp/idf/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/borjajuegos9/esp/idf/esp-idf -D "SERIAL_TOOL=/home/borjajuegos9/esp/idf-tools/python_env/idf5.4_py3.10_env/bin/python;;/home/borjajuegos9/esp/idf/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/borjajuegos9/esp/projects_tf/fruit_detection/build -P /home/borjajuegos9/esp/idf/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size detect 0x1000 bootloader/bootloader.bin 0x10000 person_detection.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev3
+Serial port /dev/ttyUSB0
+Connecting......
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, BLK3 partially reserved, Coding Scheme 3/4
+Crystal is 40MHz
+MAC: 84:0d:8e:19:b1:44
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Auto-detected Flash size: 4MB
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0025efff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 28496 bytes to 17354...
+Writing at 0x00001000... (50 %)
+Writing at 0x00007a48... (100 %)
+Wrote 28496 bytes (17354 compressed) at 0x00001000 in 0.7 seconds (effective 344.1 kbit/s)...
+Hash of data verified.
+Compressed 2419696 bytes to 1487070...
+Writing at 0x00010000... (1 %)
+Writing at 0x0001caca... (2 %)
+Writing at 0x00020e49... (3 %)
+Writing at 0x00025f3c... (4 %)
+Writing at 0x0002bc35... (5 %)
+Writing at 0x000311de... (6 %)
+Writing at 0x00036d38... (7 %)
+Writing at 0x0003c519... (8 %)
+Writing at 0x000422d9... (9 %)
+Writing at 0x000481fb... (10 %)
+Writing at 0x0004de5c... (12 %)
+Writing at 0x00053cc6... (13 %)
+Writing at 0x00059a83... (14 %)
+Writing at 0x0005f5c1... (15 %)
+Writing at 0x000652f8... (16 %)
+Writing at 0x0006b0d8... (17 %)
+Writing at 0x00070f8b... (18 %)
+Writing at 0x000764be... (19 %)
+Writing at 0x0007b730... (20 %)
+Writing at 0x000811b8... (21 %)
+Writing at 0x00086e23... (23 %)
+Writing at 0x0008c846... (24 %)
+Writing at 0x000925ee... (25 %)
+Writing at 0x0009807d... (26 %)
+Writing at 0x0009e004... (27 %)
+Writing at 0x000a3f18... (28 %)
+Writing at 0x000a9aaa... (29 %)
+Writing at 0x000af383... (30 %)
+Writing at 0x000b51c4... (31 %)
+Writing at 0x000ba7d2... (32 %)
+Writing at 0x000bff6f... (34 %)
+Writing at 0x000c5b30... (35 %)
+Writing at 0x000cb0db... (36 %)
+Writing at 0x000d09c4... (37 %)
+Writing at 0x000d686d... (38 %)
+Writing at 0x000dc34f... (39 %)
+Writing at 0x000e1e06... (40 %)
+Writing at 0x000e7fe4... (41 %)
+Writing at 0x000edc87... (42 %)
+Writing at 0x000f359f... (43 %)
+Writing at 0x000f972d... (45 %)
+Writing at 0x000ff0bf... (46 %)
+Writing at 0x001048c6... (47 %)
+Writing at 0x0010a929... (48 %)
+Writing at 0x0011039c... (49 %)
+Writing at 0x00115f9a... (50 %)
+Writing at 0x0011b641... (51 %)
+Writing at 0x001210a1... (52 %)
+Writing at 0x00126cc2... (53 %)
+Writing at 0x0012c665... (54 %)
+Writing at 0x001323d6... (56 %)
+Writing at 0x00138128... (57 %)
+Writing at 0x0013d910... (58 %)
+Writing at 0x001430ef... (59 %)
+Writing at 0x0014887d... (60 %)
+Writing at 0x0014e7e5... (61 %)
+Writing at 0x00154390... (62 %)
+Writing at 0x0015a095... (63 %)
+Writing at 0x0015fa5f... (64 %)
+Writing at 0x0016582b... (65 %)
+Writing at 0x0016b522... (67 %)
+Writing at 0x001714e7... (68 %)
+Writing at 0x001772eb... (69 %)
+Writing at 0x0017d1dd... (70 %)
+Writing at 0x00182864... (71 %)
+Writing at 0x00188c65... (72 %)
+Writing at 0x0018ed8a... (73 %)
+Writing at 0x00194b37... (74 %)
+Writing at 0x0019a288... (75 %)
+Writing at 0x0019f9e2... (76 %)
+Writing at 0x001a5cc8... (78 %)
+Writing at 0x001abca4... (79 %)
+Writing at 0x001b14a8... (80 %)
+Writing at 0x001b615c... (81 %)
+Writing at 0x001ba9d5... (82 %)
+Writing at 0x001c747b... (83 %)
+Writing at 0x001dbecf... (84 %)
+Writing at 0x001f5923... (85 %)
+Writing at 0x00206d7b... (86 %)
+Writing at 0x0021410b... (87 %)
+Writing at 0x0021e3c1... (89 %)
+Writing at 0x00223c4d... (90 %)
+Writing at 0x00229511... (91 %)
+Writing at 0x0022e6cd... (92 %)
+Writing at 0x00233762... (93 %)
+Writing at 0x00238c1e... (94 %)
+Writing at 0x0023ed9f... (95 %)
+Writing at 0x002477fa... (96 %)
+Writing at 0x0024f0da... (97 %)
+Writing at 0x002549fd... (98 %)
+Writing at 0x0025a35c... (100 %)
+Wrote 2419696 bytes (1487070 compressed) at 0x00010000 in 33.9 seconds (effective 570.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.0 seconds (effective 624.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

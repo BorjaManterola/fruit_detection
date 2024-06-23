@@ -1,0 +1,41 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33mMultiple decode errors occured: Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+[0;33m0x400efdc7: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084541: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d52dd: uart_ll_get_txfifo_len at /home/borjajuegos9/esp/idf/esp-idf/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+0x400d5ed6: uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:223
+ (inlined by) uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:206
+0x400d6c42: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000182a: write in ROM
+0x400d6861: console_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_vfs_console/vfs_console.c:67
+0x400d6c42: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x40086d75: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x400861c1: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x40086222: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-070bbf2f/newlib/libc/include/stdio.h:417
+0x40086706: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:232
+0x400f6da3: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400f675a: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x400f8fdb: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d81ee: loop at /home/borjajuegos9/esp/projects_tf/fruit_detection/main/main_functions.cc:111
+0x400d7c0a: tf_main() at /home/borjajuegos9/esp/projects_tf/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x400efdc7: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084541: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4008974e: xQueueGenericSend at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:938 (discriminator 2)
+0x400898f1: xQueueGiveMutexRecursive at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:789
+0x40082d7f: lock_release_generic at /home/borjajuegos9/esp/idf/esp-idf/components/newlib/locks.c:197
+0x40082f71: _lock_release_recursive at /home/borjajuegos9/esp/idf/esp-idf/components/newlib/locks.c:211
+ (inlined by) __retarget_lock_release_recursive at /home/borjajuegos9/esp/idf/esp-idf/components/newlib/locks.c:347
+0x400f6789: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1779 (discriminator 3)
+0x400f8fdb: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d81ee: loop at /home/borjajuegos9/esp/projects_tf/fruit_detection/main/main_functions.cc:111
+0x400d7c0a: tf_main() at /home/borjajuegos9/esp/projects_tf/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0m

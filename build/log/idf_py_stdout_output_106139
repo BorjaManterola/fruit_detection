@@ -1,0 +1,228 @@
+x�WAJ]��������Ҳ&�7��HH�t��� ��]E��}RŪU�I��t��E3�)U}�A*�e1�S�%�O�J���K�g�Zi �	�A%�P�e���k�V�:��0,�E�v��A0��E��i0��bc���r�'���	�}�r�'���i�_�.����j
+��:�R�	�o�-"��i1C!�+�:��ff��¬k�:�M&SH��d:��00��0��n:LSSj
+�+�:��00���0�k�:�C!�d:��00���4��n�ӊ������ ��00���c��[0;32mI (28) boot: ESP-IDF v5.4-dev-421-g4523f2d674 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Jun 22 2024 18:07:54[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (48) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b2c38h (1780792) map[0m
+[0;32mI (565) esp_image: segment 1: paddr=001c2c60 vaddr=3ffb0000 size=0336ch ( 13164) load[0m
+[0;32mI (569) esp_image: segment 2: paddr=001c5fd4 vaddr=40080000 size=0a044h ( 41028) load[0m
+[0;32mI (583) esp_image: segment 3: paddr=001d0020 vaddr=400d0020 size=2f950h (194896) map[0m
+[0;32mI (633) esp_image: segment 4: paddr=001ff978 vaddr=4008a044 size=069e4h ( 27108) load[0m
+[0;32mI (650) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (650) boot: Disabling RNG early entropy source...[0m
+[0;32mI (662) cpu_start: Multicore app[0m
+[0;32mI (662) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (662) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (664) esp_psram: Speed: 80MHz[0m
+[0;32mI (668) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (675) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (1148) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1156) cpu_start: Pro cpu start user code[0m
+[0;32mI (1156) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (1156) app_init: Application information:[0m
+[0;32mI (1159) app_init: Project name:     person_detection[0m
+[0;32mI (1165) app_init: App version:      cfd6ac0-dirty[0m
+[0;32mI (1170) app_init: Compile time:     Jun 23 2024 15:29:12[0m
+[0;32mI (1176) app_init: ELF file SHA256:  4b8b6764f...[0m
+[0;32mI (1182) app_init: ESP-IDF:          v5.4-dev-421-g4523f2d674[0m
+[0;32mI (1188) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1193) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1198) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (1203) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1210) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1216) heap_init: At 3FFB4140 len 0002BEC0 (175 KiB): DRAM[0m
+[0;32mI (1223) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1229) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1236) heap_init: At 40090A28 len 0000F5D8 (61 KiB): IRAM[0m
+[0;32mI (1242) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1250) spi_flash: detected chip: generic[0m
+[0;32mI (1254) spi_flash: flash io: qio[0m
+[0;33mW (1258) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1269) main_task: Started on CPU0[0m
+[0;32mI (1279) main_task: Calling app_main()[0m
+Total heap size: 4509552
+Free heap size: 4484416
+Total PSRAM size: 8388608
+Free PSRAM size: 4191744
+hola
+hola2
+Free heap size after allocation: 4304188
+Free PSRAM size after allocation: 4011516
+[0;32mI (1289) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1299) cam_hal: cam init ok[0m
+[0;32mI (1299) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (1309) sccb: sccb_i2c_port=1[0m
+[0;32mI (1309) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1349) camera: Detected camera at address=0x30[0m
+[0;32mI (1349) camera: Detected OV2640 camera[0m
+[0;32mI (1349) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1419) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1429) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1439) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1449) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1449) cam_hal: cam config ok[0m
+[0;32mI (1459) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+Camera Initialized
+
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.027344, Banana: 0.156250, Lemon: 0.816406, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.031250, Banana: 0.167969, Lemon: 0.796875, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.035156, Banana: 0.117188, Lemon: 0.847656, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.015625, Banana: 0.019531, Lemon: 0.964844, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.015625, Banana: 0.019531, Lemon: 0.968750, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.003906, Banana: 0.003906, Lemon: 0.988281, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.007812, Banana: 0.011719, Lemon: 0.980469, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.007812, Banana: 0.019531, Lemon: 0.972656, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.007812, Banana: 0.101562, Lemon: 0.890625, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.003906, Banana: 0.035156, Lemon: 0.960938, Other: 0.000000
+Image Captured
+
+Detected fruit: Banana
+Apple: 0.046875, Banana: 0.574219, Lemon: 0.378906, Other: 0.000000
+Image Captured
+
+Detected fruit: Banana
+Apple: 0.039062, Banana: 0.648438, Lemon: 0.312500, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.003906, Banana: 0.062500, Lemon: 0.933594, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.042969, Banana: 0.335938, Lemon: 0.621094, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.019531, Banana: 0.062500, Lemon: 0.917969, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.003906, Banana: 0.011719, Lemon: 0.984375, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.003906, Banana: 0.011719, Lemon: 0.984375, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.007812, Banana: 0.132812, Lemon: 0.859375, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.000000, Banana: 0.003906, Lemon: 0.996094, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.015625, Banana: 0.089844, Lemon: 0.894531, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.000000, Banana: 0.011719, Lemon: 0.988281, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.000000, Banana: 0.003906, Lemon: 0.996094, Other: 0.000000
+Image Captured
+
+Detected fruit: Banana
+Apple: 0.089844, Banana: 0.570312, Lemon: 0.339844, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.246094, Banana: 0.335938, Lemon: 0.375000, Other: 0.042969
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.066406, Banana: 0.285156, Lemon: 0.648438, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.015625, Banana: 0.101562, Lemon: 0.882812, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.171875, Banana: 0.289062, Lemon: 0.539062, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.179688, Banana: 0.304688, Lemon: 0.511719, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.000000, Banana: 0.000000, Lemon: 0.996094, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.000000, Banana: 0.000000, Lemon: 0.996094, Other: 0.000000
+Image Captured
+
+Detected fruit: Banana
+Apple: 0.171875, Banana: 0.433594, Lemon: 0.390625, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.000000, Banana: 0.000000, Lemon: 0.996094, Other: 0.000000
+Image Captured
+
+Detected fruit: Apple
+Apple: 0.480469, Banana: 0.136719, Lemon: 0.257812, Other: 0.125000
+Image Captured
+
+Detected fruit: Apple
+Apple: 0.531250, Banana: 0.207031, Lemon: 0.257812, Other: 0.003906
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.023438, Banana: 0.019531, Lemon: 0.957031, Other: 0.000000
+Image Captured
+
+Detected fruit: Lemon
+Apple: 0.023438, Banana: 0.062500, Lemon: 0.914062, Other: 0.000000
+Image Captured
+
+Detected fruit: Banana
+Apple: 0.003906, Banana: 0.500000, Lemon: 0.500000, Other: 0.000000
+Image Captured
+

@@ -70,9 +70,18 @@ void *image_provider_get_display_buf()
 {
   return (void *) display_buf;
 }
+static camera_fb_t* last_fb = nullptr;
 
+// Función para obtener el último frame capturado
+camera_fb_t* GetLastFrame() {
+    return last_fb;
+}
 // Get an image from the camera module
-TfLiteStatus GetImage(int image_width, int image_height, int channels, float* image_data) {
+TfLiteStatus GetImage(int image_width, int image_height, int channels, int8_t* image_data) {
+  if (last_fb != nullptr) {
+        esp_camera_fb_return(last_fb);
+        last_fb = nullptr;
+    }
 #if ESP_CAMERA_SUPPORTED
   camera_fb_t* fb = esp_camera_fb_get();
   if (!fb) {
@@ -114,24 +123,8 @@ TfLiteStatus GetImage(int image_width, int image_height, int channels, float* im
   MicroPrintf("Image Captured\n");
   // We have initialised camera to grayscale
   // Just quantize to int8_t
-  for (int i = 0; i < image_width * image_height; i++) {
-    // Convert the uint8_t pixel to float32
-    float pixel = static_cast<float>(((uint8_t *) fb->buf)[i]);
-    // Normalize the pixel data to 0-1 range if your model expects this range
-    image_data[i] = pixel / 255.0f;
-  }
-  // for (int i = 0; i < image_width * image_height; i++) {
-  //   // Convert the uint8_t pixel to float32
-  //   float pixel = static_cast<float>(((uint8_t *) fb->buf)[i]);
-  //   // Normalize the pixel data to 0-1 range if your model expects this range
-  //   image_data[i] = pixel / 255.0f;
-
-  //   // Print the pixel value to the terminal
-  //   printf("%f, ", image_data[i]);
-  // }
-  // printf("\n");
 #endif // DISPLAY_SUPPORT
-
+  last_fb = fb;
   esp_camera_fb_return(fb);
   /* here the esp camera can give you grayscale image directly */
   return kTfLiteOk;

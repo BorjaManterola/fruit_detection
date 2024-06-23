@@ -1,0 +1,38 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33mMultiple decode errors occured: Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+[0;33m0x400efde3: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084541: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008c8ba: vPortClearInterruptMaskFromISR at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) xTaskGetCurrentTaskHandle at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4943
+ (inlined by) __getreent at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:852
+0x400f8fdd: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:52
+0x400d81ff: loop at /home/borjajuegos9/esp/projects_tf/fruit_detection/main/main_functions.cc:118
+0x400d7c12: tf_main() at /home/borjajuegos9/esp/projects_tf/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x400efde3: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084541: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d52dd: uart_tx_char at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:167
+0x400d5ede: uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:223
+ (inlined by) uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:206
+0x400d6c4a: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000182a: write in ROM
+0x400d6869: console_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_vfs_console/vfs_console.c:67
+0x400d6c4a: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x40086d75: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x400861c1: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x40086222: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-070bbf2f/newlib/libc/include/stdio.h:417
+0x40086706: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:232
+0x400f6dbf: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400f673d: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1766 (discriminator 1)
+0x400f8ff7: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d81ff: loop at /home/borjajuegos9/esp/projects_tf/fruit_detection/main/main_functions.cc:118
+0x400d7c12: tf_main() at /home/borjajuegos9/esp/projects_tf/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0m
