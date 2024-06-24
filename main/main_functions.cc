@@ -15,7 +15,7 @@
 #include "esp_main.h"
 #include "esp_psram.h"
 
-#define MCU_POWER 0.264 / 2
+#define INF_POWER 0.13
 
 namespace {
 const tflite::Model* model = nullptr;
@@ -153,14 +153,9 @@ void run_inference(void *ptr) {
     MicroPrintf("Invoke failed.");
   }
 
-  for (int i = 0; i < kNumCols * kNumRows; i++) {
-      printf("%f, ", input->data.f[i]);
-  }
-  printf("\n");
-
 #if defined(COLLECT_CPU_STATS)
   long long total_time = (esp_timer_get_time() - start_time);
-  printf("\nQuantize time = %.3f [ms]\n", q_total_time / 1000.0);
+  printf("Quantize time = %.3f [ms]\n", q_total_time / 1000.0);
   printf("Conv2D total time = %.3f [ms]\n", conv_total_time / 1000.0);
   printf("MaxPool2D total time = %.3f [ms]\n", pooling_total_time / 1000.0);
   printf("Reshape time = %.3f [ms]\n", resh_total_time / 1000.0);
@@ -169,14 +164,14 @@ void run_inference(void *ptr) {
   printf("Dequantize time = %.3f [ms]\n", dq_total_time / 1000.0);
   printf("Total time = %.3f [ms]\n\n", total_time / 1000.0);
 
-  // printf("Quantize energy = %f [J]\n", MCU_POWER * (q_total_time / 1000000.0));
-  // printf("Conv2D energy = %f [J]\n", MCU_POWER * (conv_total_time / 1000000.0));
-  // printf("MaxPool2D energy = %f [J]\n", MCU_POWER * (pooling_total_time / 1000000.0));
-  // printf("Reshape energy = %f [J]\n", MCU_POWER * (resh_total_time / 1000000.0));
-  // printf("FullyConnected energy = %f [J]\n", MCU_POWER * (fc_total_time / 1000000.0));
-  // printf("Softmax energy = %f [J]\n", MCU_POWER * (softmax_total_time / 1000000.0));
-  // printf("Dequantize energy = %f [J]\n", MCU_POWER * (dq_total_time / 1000000.0));
-  // printf("Total energy = %f [J]\n\n", MCU_POWER * (total_time / 1000000.0));
+  printf("Quantize energy = %f [J]\n", INF_POWER * (q_total_time / 1000000.0));
+  printf("Conv2D energy = %f [J]\n", INF_POWER * (conv_total_time / 1000000.0));
+  printf("MaxPool2D energy = %f [J]\n", INF_POWER * (pooling_total_time / 1000000.0));
+  printf("Reshape energy = %f [J]\n", INF_POWER * (resh_total_time / 1000000.0));
+  printf("FullyConnected energy = %f [J]\n", INF_POWER * (fc_total_time / 1000000.0));
+  printf("Softmax energy = %f [J]\n", INF_POWER * (softmax_total_time / 1000000.0));
+  printf("Dequantize energy = %f [J]\n", INF_POWER * (dq_total_time / 1000000.0));
+  printf("Total energy = %f [J]\n\n", INF_POWER * (total_time / 1000000.0));
 
   /* Reset times */
   total_time = 0;

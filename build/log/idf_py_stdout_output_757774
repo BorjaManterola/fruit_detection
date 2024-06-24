@@ -185,4 +185,106 @@ Image Captured
 Input type: FLOAT32
 Output type: FLOAT32
 Detected fruit: Lemon
-Apple: 0.007812, Banana: 0.382812, Le
+Apple: 0.007812, Banana: 0.382812, Lemon: 0.472656, Other: 0.136719
+Image Captured
+
+Input type: FLOAT32
+Output type: FLOAT32
+Detected fruit: Lemon
+Apple: 0.007812, Banana: 0.335938, Lemon: 0.457031, Other: 0.199219
+Image Captured
+
+Input type: FLOAT32
+Output type: FLOAT32
+Detected fruit: Lemon
+Apple: 0.007812, Banana: 0.347656, Lemon: 0.476562, Other: 0.167969
+Image Captured
+
+Input type: FLOAT32
+Output type: FLOAT32
+Detected fruit: Lemon
+Apple: 0.007812, Banana: 0.347656, Lemon: 0.476562, Other: 0.167969
+Image Captured
+
+Input type: FLOAT32
+Output type: FLOAT32
+Detected fruit: Lemon
+Apple: 0.007812, Banana: 0.335938, Lemon: 0.457031, Other: 0.199219
+Image Captured
+
+Input type: FLOAT32
+Output type: FLOAT32
+Detected fruit: Lemon
+Apple: 0.007812, Banana: 0.367188, Lemon: 0.500000, Other: 0.128906
+Image Captured
+
+Input type: FLOAT32
+Output type: FLOAT32
+Detected fruit: Lemon
+Apple: 0.007812, Banana: 0.347656, Lemon: 0.476562, Other: 0.167969
+Image Captured
+
+Input type: FLOAT32
+Output type: FLOAT32
+Detected fruit: Lemon
+Apple: 0.007812, Banana: 0.351562, Lemon: 0.433594, Other: 0.210938
+Image Captured
+
+Input type: FLOAT32
+Output type: FLOAT32
+Detected fruit: Lemon
+Apple: 0.007812, Banana: 0.359375, Lemon: 0.441406, Other: 0.191406
+Image Captured
+
+Input type: FLOAT32
+Output type: FLOAT32
+Detected fruit: Lemon
+Apple: 0.003906, Banana: 0.320312, Lemon: 0.437500, Other: 0.234375
+Image Captured
+
+Input type: FLOAT32
+Output type: FLOAT32
+Detected fruit: Lemon
+Apple: 0.003906, Banana: 0.343750, Lemon: 0.421875, Other: 0.226562
+Image Captured
+
+Input type: FLOAT32
+Output type: FLOAT32
+Detected fruit: Lemon
+Apple: 0.003906, Banana: 0.335938, Lemon: 0.457031, Other: 0.199219
+Image Captured
+
+Input type: FLOAT32
+Output type: FLOAT32
+Detected fruit: Lemon
+Apple: 0.007812, Banana: 0.335938, Lemon: 0.457031, Other: 0.199219
+Image Captured
+
+Input type: FLOAT32
+Output type: FLOAT32
+Detected fruit: Lemon
+Apple: 0.003906, Banana: 0.328125, Lemon: 0.449219, Other: 0.218750
+Image Captured
+
+Input type: FLOAT32
+Output type: FLOAT32
+Detected fruit: Lemon
+Apple: 0.003906, Banana: 0.328125, Lemon: 0.449219, Other: 0.218750
+Image Captured
+
+Input type: FLOAT32
+Output type: FLOAT32
+Detected fruit: Lemon
+Apple: 0.003906, Banana: 0.320312, Lemon: 0.437500, Other: 0.234375
+Image Captured
+
+Input type: FLOAT32
+Output type: FLOAT32
+Detected fruit: Lemon
+Apple: 0.003906, Banana: 0.328125, Lemon: 0.449219, Other: 0.218750
+Image Captured
+
+Input type: FLOAT32
+Output type: FLOAT32
+Detected fruit: Lemon
+Apple: 0.003906, Banana: 0.328125, Lemon: 0.449219, Other: 0.218750
