@@ -70,6 +70,15 @@ void RespondToDetection(float* fruit_score, const char* kCategoryLabels[]) {
   }
 
   // Log the detected fruit.
-  MicroPrintf("Detected fruit: %s", kCategoryLabels[max_score_index]);
+  if (max_score > 0.5) {
+    if (kCategoryLabels[max_score_index] == "Other") {
+      MicroPrintf("No fruit detected");
+    }
+    else {
+      MicroPrintf("Detected fruit: %s", kCategoryLabels[max_score_index]);
+    }
+  } else {
+    MicroPrintf("No fruit detected");
+  }
   MicroPrintf("Apple: %f, Banana: %f, Lemon: %f, Other: %f", fruit_score[0], fruit_score[1], fruit_score[2], fruit_score[3]);
 }
