@@ -16,8 +16,10 @@ limitations under the License.
 #include "model_settings.h"
 
 const char* kCategoryLabels[kCategoryCount] = {
-    "Apple",
-    "Banana",
-    "Lemon",
-    "Other",
+    "abierta",
+    "apuntar",
+    "cero",
+    "chill",
+    "perro",
+    "rock"
 };

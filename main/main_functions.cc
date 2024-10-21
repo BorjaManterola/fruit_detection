@@ -114,11 +114,11 @@ void loop() {
   printf("Input type: %s\n", TfLiteTypeGetName(input->type));
   printf("Output type: %s\n", TfLiteTypeGetName(output->type));
 
-  float fruit_scores[kCategoryCount];
+  float sign_scores[kCategoryCount];
   for (int i = 0; i < kCategoryCount; ++i) {
-    fruit_scores[i] = output->data.f[i];
+    sign_scores[i] = output->data.f[i];
   }
-  RespondToDetection(fruit_scores, kCategoryLabels);
+  RespondToDetection(sign_scores, kCategoryLabels);
   vTaskDelay(5000 / portTICK_RATE_MS);
 }
 #endif
@@ -190,10 +190,10 @@ void run_inference(void *ptr) {
   // printf("Input type: %s\n", TfLiteTypeGetName(input->type));
   // printf("Output type: %s\n", TfLiteTypeGetName(output->type));
 
-  float fruit_scores[kCategoryCount];
+  float sign_scores[kCategoryCount];
   for (int i = 0; i < kCategoryCount; ++i) {
-    fruit_scores[i] = output->data.f[i];
+    sign_scores[i] = output->data.f[i];
   }
-  RespondToDetection(fruit_scores, kCategoryLabels);
+  RespondToDetection(sign_scores, kCategoryLabels);
 }
 #endif

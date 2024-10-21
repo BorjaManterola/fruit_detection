@@ -58,27 +58,27 @@ static void create_gui(void)
 }
 #endif // DISPLAY_SUPPORT
 
-void RespondToDetection(float* fruit_score, const char* kCategoryLabels[]) {
-  // Find the fruit with the highest score.
+void RespondToDetection(float* sign_score, const char* kCategoryLabels[]) {
+  // Find the sign with the highest score.
   float max_score = 0;
   int max_score_index = 0;
-  for (int i = 0; i < 4; ++i) {
-    if (fruit_score[i] > max_score) {
-      max_score = fruit_score[i];
+  for (int i = 0; i < 6; ++i) {
+    if (sign_score[i] > max_score) {
+      max_score = sign_score[i];
       max_score_index = i;
     }
   }
 
-  // Log the detected fruit.
+  // Log the detected sign.
   if (max_score > 0.5) {
     if (max_score_index == 3) {
-      MicroPrintf("No fruit detected");
+      MicroPrintf("No sign detected");
     }
     else {
-      MicroPrintf("Detected fruit: %s", kCategoryLabels[max_score_index]);
+      MicroPrintf("Detected sign: %s", kCategoryLabels[max_score_index]);
     }
   } else {
-    MicroPrintf("No fruit detected");
+    MicroPrintf("No sign detected");
   }
-  MicroPrintf("Apple: %f, Banana: %f, Lemon: %f, Other: %f", fruit_score[0], fruit_score[1], fruit_score[2], fruit_score[3]);
+  MicroPrintf("abierta: %f, apuntar: %f, cero: %f, chill: %f, perro: %f, rock: %f", sign_score[0], sign_score[1], sign_score[2], sign_score[3]);
 }
