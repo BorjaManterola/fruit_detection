@@ -71,14 +71,9 @@ void RespondToDetection(float* sign_score, const char* kCategoryLabels[]) {
 
   // Log the detected sign.
   if (max_score > 0.5) {
-    if (max_score_index == 3) {
-      MicroPrintf("No sign detected");
-    }
-    else {
-      MicroPrintf("Detected sign: %s", kCategoryLabels[max_score_index]);
-    }
+    MicroPrintf("Detected sign: %s", kCategoryLabels[max_score_index]);
   } else {
     MicroPrintf("No sign detected");
   }
-  MicroPrintf("abierta: %f, apuntar: %f, cero: %f, chill: %f, perro: %f, rock: %f", sign_score[0], sign_score[1], sign_score[2], sign_score[3]);
+  MicroPrintf("abierta: %f, apuntar: %f, cero: %f, chill: %f, perro: %f, rock: %f", sign_score[0], sign_score[1], sign_score[2], sign_score[3], sign_score[4], sign_score[5]);
 }
