@@ -1,0 +1,268 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400eff30: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d5467: uart_ll_get_txfifo_len at /home/borjajuegos9/esp/idf/esp-idf/components/hal/esp32/include/hal/uart_ll.h:428
+ (inlined by) uart_tx_char at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+0x400d6062: uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:223
+ (inlined by) uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:206
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000182a: write in ROM
+0x400d69f9: console_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_vfs_console/vfs_console.c:70
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x40086e95: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x40086315: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4008636a: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+0x40086837: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:232
+0x400f6d57: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400f675e: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x400f8c23: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d8717: GetImage(int, int, int, float*) at /home/borjajuegos9/esp/projects/fruit_detection/main/image_provider.cc:122
+0x400d858a: loop at /home/borjajuegos9/esp/projects/fruit_detection/main/main_functions.cc:104
+0x400d7fee: tf_main() at /home/borjajuegos9/esp/projects/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m--- 0x400eff30: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d5467: uart_ll_get_txfifo_len at /home/borjajuegos9/esp/idf/esp-idf/components/hal/esp32/include/hal/uart_ll.h:428
+ (inlined by) uart_tx_char at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+0x400d6062: uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:223
+ (inlined by) uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:206
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000182a: write in ROM
+0x400d69f9: console_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_vfs_console/vfs_console.c:70
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x40086e95: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x40086315: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4008636a: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+0x40086837: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:232
+0x400f6d57: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400f6721: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1766 (discriminator 1)
+0x400f8c23: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d8717: GetImage(int, int, int, float*) at /home/borjajuegos9/esp/projects/fruit_detection/main/image_provider.cc:122
+0x400d858a: loop at /home/borjajuegos9/esp/projects/fruit_detection/main/main_functions.cc:104
+0x400d7fee: tf_main() at /home/borjajuegos9/esp/projects/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m--- 0x400eff30: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d5469: uart_ll_get_txfifo_len at /home/borjajuegos9/esp/idf/esp-idf/components/hal/esp32/include/hal/uart_ll.h:428
+ (inlined by) uart_tx_char at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+0x400d6062: uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:223
+ (inlined by) uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:206
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000182a: write in ROM
+0x400d69f9: console_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_vfs_console/vfs_console.c:70
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x40086e95: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x40086315: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4008636a: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+0x40086837: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:232
+0x400f6d57: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400f6721: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1766 (discriminator 1)
+0x400f8c23: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d8717: GetImage(int, int, int, float*) at /home/borjajuegos9/esp/projects/fruit_detection/main/image_provider.cc:122
+0x400d858a: loop at /home/borjajuegos9/esp/projects/fruit_detection/main/main_functions.cc:104
+0x400d7fee: tf_main() at /home/borjajuegos9/esp/projects/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m--- 0x400eff30: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d5462: uart_ll_get_txfifo_len at /home/borjajuegos9/esp/idf/esp-idf/components/hal/esp32/include/hal/uart_ll.h:428
+ (inlined by) uart_tx_char at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+0x400d6062: uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:223
+ (inlined by) uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:206
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000182a: write in ROM
+0x400d69f9: console_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_vfs_console/vfs_console.c:70
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x40086e95: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x40086315: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4008636a: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+0x40086837: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:232
+0x400f6d57: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400f675e: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x400f8c23: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d8717: GetImage(int, int, int, float*) at /home/borjajuegos9/esp/projects/fruit_detection/main/image_provider.cc:122
+0x400d858a: loop at /home/borjajuegos9/esp/projects/fruit_detection/main/main_functions.cc:104
+0x400d7fee: tf_main() at /home/borjajuegos9/esp/projects/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m--- 0x400eff30: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d5472: uart_ll_get_txfifo_len at /home/borjajuegos9/esp/idf/esp-idf/components/hal/esp32/include/hal/uart_ll.h:428
+ (inlined by) uart_tx_char at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+0x400d6062: uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:223
+ (inlined by) uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:206
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000182a: write in ROM
+0x400d69f9: console_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_vfs_console/vfs_console.c:70
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x40086e95: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x40086315: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4008636a: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+0x40086837: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:232
+0x400f6d57: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400f675e: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x400f8c23: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d8717: GetImage(int, int, int, float*) at /home/borjajuegos9/esp/projects/fruit_detection/main/image_provider.cc:122
+0x400d858a: loop at /home/borjajuegos9/esp/projects/fruit_detection/main/main_functions.cc:104
+0x400d7fee: tf_main() at /home/borjajuegos9/esp/projects/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m--- 0x400eff30: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d5469: uart_ll_get_txfifo_len at /home/borjajuegos9/esp/idf/esp-idf/components/hal/esp32/include/hal/uart_ll.h:428
+ (inlined by) uart_tx_char at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+0x400d6062: uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:223
+ (inlined by) uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:206
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000182a: write in ROM
+0x400d69f9: console_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_vfs_console/vfs_console.c:70
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x40086e95: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x40086315: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4008636a: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+0x40086837: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:232
+0x400f6d57: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400f6721: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1766 (discriminator 1)
+0x400f8c23: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d8717: GetImage(int, int, int, float*) at /home/borjajuegos9/esp/projects/fruit_detection/main/image_provider.cc:122
+0x400d858a: loop at /home/borjajuegos9/esp/projects/fruit_detection/main/main_functions.cc:104
+0x400d7fee: tf_main() at /home/borjajuegos9/esp/projects/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m--- 0x400eff30: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d5469: uart_ll_get_txfifo_len at /home/borjajuegos9/esp/idf/esp-idf/components/hal/esp32/include/hal/uart_ll.h:428
+ (inlined by) uart_tx_char at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+0x400d6062: uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:223
+ (inlined by) uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:206
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000182a: write in ROM
+0x400d69f9: console_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_vfs_console/vfs_console.c:70
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x40086e95: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x40086315: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4008636a: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+0x40086837: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:232
+0x400f6d57: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400f6721: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1766 (discriminator 1)
+0x400f8c23: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d8717: GetImage(int, int, int, float*) at /home/borjajuegos9/esp/projects/fruit_detection/main/image_provider.cc:122
+0x400d858a: loop at /home/borjajuegos9/esp/projects/fruit_detection/main/main_functions.cc:104
+0x400d7fee: tf_main() at /home/borjajuegos9/esp/projects/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m--- 0x400eff30: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d5469: uart_ll_get_txfifo_len at /home/borjajuegos9/esp/idf/esp-idf/components/hal/esp32/include/hal/uart_ll.h:428
+ (inlined by) uart_tx_char at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+0x400d6062: uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:223
+ (inlined by) uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:206
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000182a: write in ROM
+0x400d69f9: console_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_vfs_console/vfs_console.c:70
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x40086e95: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x40086315: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4008636a: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+0x40086837: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:232
+0x400f6d57: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400f6721: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1766 (discriminator 1)
+0x400f8c23: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d8717: GetImage(int, int, int, float*) at /home/borjajuegos9/esp/projects/fruit_detection/main/image_provider.cc:122
+0x400d858a: loop at /home/borjajuegos9/esp/projects/fruit_detection/main/main_functions.cc:104
+0x400d7fee: tf_main() at /home/borjajuegos9/esp/projects/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m--- 0x400eff30: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d5467: uart_ll_get_txfifo_len at /home/borjajuegos9/esp/idf/esp-idf/components/hal/esp32/include/hal/uart_ll.h:428
+ (inlined by) uart_tx_char at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+0x400d6062: uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:223
+ (inlined by) uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:206
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000182a: write in ROM
+0x400d69f9: console_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_vfs_console/vfs_console.c:70
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x40086e95: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x40086315: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4008636a: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+0x40086837: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:232
+0x400f6d57: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400f6721: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1766 (discriminator 1)
+0x400f8c23: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d8717: GetImage(int, int, int, float*) at /home/borjajuegos9/esp/projects/fruit_detection/main/image_provider.cc:122
+0x400d858a: loop at /home/borjajuegos9/esp/projects/fruit_detection/main/main_functions.cc:104
+0x400d7fee: tf_main() at /home/borjajuegos9/esp/projects/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m--- 0x400eff30: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d5469: uart_ll_get_txfifo_len at /home/borjajuegos9/esp/idf/esp-idf/components/hal/esp32/include/hal/uart_ll.h:428
+ (inlined by) uart_tx_char at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+0x400d6062: uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:223
+ (inlined by) uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:206
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000182a: write in ROM
+0x400d69f9: console_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_vfs_console/vfs_console.c:70
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x40086e95: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x40086315: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4008636a: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+0x40086837: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:232
+0x400f6d57: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400f6721: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1766 (discriminator 1)
+0x400f8c23: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d8717: GetImage(int, int, int, float*) at /home/borjajuegos9/esp/projects/fruit_detection/main/image_provider.cc:122
+0x400d858a: loop at /home/borjajuegos9/esp/projects/fruit_detection/main/main_functions.cc:104
+0x400d7fee: tf_main() at /home/borjajuegos9/esp/projects/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m--- 0x400eff30: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d545a: uart_tx_char at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:167
+0x400d6062: uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:223
+ (inlined by) uart_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:206
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000182a: write in ROM
+0x400d69f9: console_write at /home/borjajuegos9/esp/idf/esp-idf/components/esp_vfs_console/vfs_console.c:70
+0x400d6dd5: esp_vfs_write at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x40086e95: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x40086315: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4008636a: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+0x40086837: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:232
+0x400f6d57: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400f6721: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1766 (discriminator 1)
+0x400f8c23: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x400d8717: GetImage(int, int, int, float*) at /home/borjajuegos9/esp/projects/fruit_detection/main/image_provider.cc:122
+0x400d858a: loop at /home/borjajuegos9/esp/projects/fruit_detection/main/main_functions.cc:104
+0x400d7fee: tf_main() at /home/borjajuegos9/esp/projects/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0m

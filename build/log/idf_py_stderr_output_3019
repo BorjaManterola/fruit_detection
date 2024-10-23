@@ -1,0 +1,178 @@
+/home/borjajuegos9/esp/projects/fruit_detection/managed_components/espressif__esp32-camera/driver/esp_camera.c: In function 'camera_probe':
+/home/borjajuegos9/esp/projects/fruit_detection/managed_components/espressif__esp32-camera/driver/esp_camera.c:156:48: warning: 'calloc' sizes specified with 'sizeof' in the earlier argument and not in the later argument [-Wcalloc-transposed-args]
+  156 |     s_state = (camera_state_t *) calloc(sizeof(camera_state_t), 1);
+      |                                                ^~~~~~~~~~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/managed_components/espressif__esp32-camera/driver/esp_camera.c:156:48: note: earlier argument should specify number of elements, later size of each element
+In file included from /home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/lstm_eval.cc:25:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:150:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  150 |       [](const ArithmeticParams& params, const uint8_t input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:126:56: note: shadowed declaration is here
+  126 | inline void BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:209:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  209 |       [](const ArithmeticParams& params, const T input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:171:44: note: shadowed declaration is here
+  171 | BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:249:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  249 |       [](const ArithmeticParams& params, const std::complex<float> input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:221:56: note: shadowed declaration is here
+  221 | inline void BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/mul_common.cc:19:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:150:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  150 |       [](const ArithmeticParams& params, const uint8_t input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:126:56: note: shadowed declaration is here
+  126 | inline void BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:209:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  209 |       [](const ArithmeticParams& params, const T input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:171:44: note: shadowed declaration is here
+  171 | BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:249:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  249 |       [](const ArithmeticParams& params, const std::complex<float> input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:221:56: note: shadowed declaration is here
+  221 | inline void BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/mul.cc:21:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:150:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  150 |       [](const ArithmeticParams& params, const uint8_t input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:126:56: note: shadowed declaration is here
+  126 | inline void BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:209:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  209 |       [](const ArithmeticParams& params, const T input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:171:44: note: shadowed declaration is here
+  171 | BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h: In lambda function:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:249:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  249 |       [](const ArithmeticParams& params, const std::complex<float> input1_val,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/mul.h:221:56: note: shadowed declaration is here
+  221 | inline void BroadcastMul6DSlow(const ArithmeticParams& params,
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/sub.cc:24:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In lambda function:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:264:62: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  264 |       [](T input1_val, T input2_val, const ArithmeticParams& params) {
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:256:47: note: shadowed declaration is here
+  256 | void BroadcastSubSlow(const ArithmeticParams& params,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In lambda function:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:284:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  284 |          const ArithmeticParams& params) {
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:272:59: note: shadowed declaration is here
+  272 | inline void BroadcastSub16POTSlow(const ArithmeticParams& params,
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In lambda function:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:308:62: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  308 |       [](T input1_val, T input2_val, const ArithmeticParams& params) {
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:298:52: note: shadowed declaration is here
+  298 | void BroadcastQuantSubSlow(const ArithmeticParams& params,
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In lambda function:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:420:62: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  420 |       [](T input1_val, T input2_val, const ArithmeticParams& params) {
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:413:34: note: shadowed declaration is here
+  413 | void Sub(const ArithmeticParams& params, const RuntimeShape& input1_shape,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/sub_common.cc:22:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In lambda function:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:264:62: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  264 |       [](T input1_val, T input2_val, const ArithmeticParams& params) {
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:256:47: note: shadowed declaration is here
+  256 | void BroadcastSubSlow(const ArithmeticParams& params,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In lambda function:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:284:34: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  284 |          const ArithmeticParams& params) {
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:272:59: note: shadowed declaration is here
+  272 | inline void BroadcastSub16POTSlow(const ArithmeticParams& params,
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In lambda function:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:308:62: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  308 |       [](T input1_val, T input2_val, const ArithmeticParams& params) {
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:298:52: note: shadowed declaration is here
+  298 | void BroadcastQuantSubSlow(const ArithmeticParams& params,
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h: In lambda function:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:420:62: warning: declaration of 'const tflite::ArithmeticParams& params' shadows a parameter [-Wshadow]
+  420 |       [](T input1_val, T input2_val, const ArithmeticParams& params) {
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/kernels/internal/reference/sub.h:413:34: note: shadowed declaration is here
+  413 | void Sub(const ArithmeticParams& params, const RuntimeShape& input1_shape,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc: In function 'TfLiteStatus tflite::{anonymous}::Prepare(TfLiteContext*, TfLiteNode*)':
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:93:13: warning: unused variable 'start_time' [-Wunused-variable]
+   93 |   long long start_time = esp_timer_get_time();
+      |             ^~~~~~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/main/app_camera_esp.c: In function 'app_camera_init':
+/home/borjajuegos9/esp/projects/fruit_detection/main/app_camera_esp.c:62:3: warning: 'pin_sscb_sda' is deprecated: please use pin_sccb_sda instead [-Wdeprecated-declarations]
+   62 |   config.pin_sscb_sda = CAMERA_PIN_SIOD;
+      |   ^~~~~~
+In file included from /home/borjajuegos9/esp/projects/fruit_detection/main/app_camera_esp.h:20,
+                 from /home/borjajuegos9/esp/projects/fruit_detection/main/app_camera_esp.c:16:
+/home/borjajuegos9/esp/projects/fruit_detection/managed_components/espressif__esp32-camera/driver/include/esp_camera.h:123:13: note: declared here
+  123 |         int pin_sscb_sda __attribute__((deprecated("please use pin_sccb_sda instead")));           /*!< GPIO pin for camera SDA line (legacy name) */
+      |             ^~~~~~~~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/main/app_camera_esp.c:63:3: warning: 'pin_sscb_scl' is deprecated: please use pin_sccb_scl instead [-Wdeprecated-declarations]
+   63 |   config.pin_sscb_scl = CAMERA_PIN_SIOC;
+      |   ^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/managed_components/espressif__esp32-camera/driver/include/esp_camera.h:127:13: note: declared here
+  127 |         int pin_sscb_scl __attribute__((deprecated("please use pin_sccb_scl instead")));           /*!< GPIO pin for camera SCL line (legacy name) */
+      |             ^~~~~~~~~~~~
+In file included from /home/borjajuegos9/esp/projects/fruit_detection/main/image_provider.cc:23:
+/home/borjajuegos9/esp/idf/esp-idf/components/spi_flash/include/esp_spi_flash.h:6:2: warning: #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead [-Wcpp]
+    6 | #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead
+      |  ^~~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/main/image_provider.cc: In function 'TfLiteStatus GetImage(int, int, int, float*)':
+/home/borjajuegos9/esp/projects/fruit_detection/main/image_provider.cc:117:3: error: 'prijntf' was not declared in this scope; did you mean 'printf'?
+  117 |   prijntf("Image Captured:\n");
+      |   ^~~~~~~
+      |   printf
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:90: esp-idf/main/CMakeFiles/__idf_main.dir/image_provider.cc.obj] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/tflite_bridge/flatbuffer_conversions_bridge.h:19,
+                 from /home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:26,
+                 from /home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:26,
+                 from /home/borjajuegos9/esp/projects/fruit_detection/main/main_functions.cc:6:
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h: In member function 'T* tflite::BuiltinDataAllocator::AllocatePOD()':
+/home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:46:24: warning: 'template<class _Tp> struct std::is_pod' is deprecated: use 'is_standard_layout && is_trivial' instead [-Wdeprecated-declarations]
+   46 |     static_assert(std::is_pod<T>::value, "Builtin data structure must be POD.");
+      |                        ^~~~~~
+In file included from /home/borjajuegos9/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/bits/stl_pair.h:60,
+                 from /home/borjajuegos9/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/utility:69,
+                 from /home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/core/c/common.h:1463,
+                 from /home/borjajuegos9/esp/projects/fruit_detection/components/espressif__esp-tflite-micro/tensorflow/lite/c/common.h:31,
+                 from /home/borjajuegos9/esp/projects/fruit_detection/main/detection_responder.h:22,
+                 from /home/borjajuegos9/esp/projects/fruit_detection/main/main_functions.cc:2:
+/home/borjajuegos9/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/type_traits:890:5: note: declared here
+  890 |     is_pod
+      |     ^~~~~~
+make[1]: *** [CMakeFiles/Makefile2:5867: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

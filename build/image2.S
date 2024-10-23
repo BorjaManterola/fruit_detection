@@ -1,4 +1,4 @@
-/* * Data converted from /home/borjajuegos9/esp/projects_tf/fruit_detection/static_images/sample_images/image2
+/* * Data converted from /home/borjajuegos9/esp/projects/fruit_detection/static_images/sample_images/image2
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

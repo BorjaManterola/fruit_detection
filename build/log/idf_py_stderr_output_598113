@@ -1,0 +1,15 @@
+/home/borjajuegos9/esp/projects/fruit_detection/main/app_camera_esp.c: In function 'app_camera_init':
+/home/borjajuegos9/esp/projects/fruit_detection/main/app_camera_esp.c:62:3: warning: 'pin_sscb_sda' is deprecated: please use pin_sccb_sda instead [-Wdeprecated-declarations]
+   62 |   config.pin_sscb_sda = CAMERA_PIN_SIOD;
+      |   ^~~~~~
+In file included from /home/borjajuegos9/esp/projects/fruit_detection/main/app_camera_esp.h:20,
+                 from /home/borjajuegos9/esp/projects/fruit_detection/main/app_camera_esp.c:16:
+/home/borjajuegos9/esp/projects/fruit_detection/managed_components/espressif__esp32-camera/driver/include/esp_camera.h:123:13: note: declared here
+  123 |         int pin_sscb_sda __attribute__((deprecated("please use pin_sccb_sda instead")));           /*!< GPIO pin for camera SDA line (legacy name) */
+      |             ^~~~~~~~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/main/app_camera_esp.c:63:3: warning: 'pin_sscb_scl' is deprecated: please use pin_sccb_scl instead [-Wdeprecated-declarations]
+   63 |   config.pin_sscb_scl = CAMERA_PIN_SIOC;
+      |   ^~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/managed_components/espressif__esp32-camera/driver/include/esp_camera.h:127:13: note: declared here
+  127 |         int pin_sscb_scl __attribute__((deprecated("please use pin_sccb_scl instead")));           /*!< GPIO pin for camera SCL line (legacy name) */
+      |             ^~~~~~~~~~~~

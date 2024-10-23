@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-/home/borjajuegos9/esp/projects_tf/fruit_detection/build/CMakeFiles/bootloader
-/home/borjajuegos9/esp/projects_tf/fruit_detection/build/CMakeFiles/bootloader.rule
-/home/borjajuegos9/esp/projects_tf/fruit_detection/build/CMakeFiles/bootloader-complete.rule
-/home/borjajuegos9/esp/projects_tf/fruit_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-/home/borjajuegos9/esp/projects_tf/fruit_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-/home/borjajuegos9/esp/projects_tf/fruit_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-/home/borjajuegos9/esp/projects_tf/fruit_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-/home/borjajuegos9/esp/projects_tf/fruit_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-/home/borjajuegos9/esp/projects_tf/fruit_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-/home/borjajuegos9/esp/projects_tf/fruit_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/home/borjajuegos9/esp/projects/fruit_detection/build/CMakeFiles/bootloader
+/home/borjajuegos9/esp/projects/fruit_detection/build/CMakeFiles/bootloader.rule
+/home/borjajuegos9/esp/projects/fruit_detection/build/CMakeFiles/bootloader-complete.rule
+/home/borjajuegos9/esp/projects/fruit_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/borjajuegos9/esp/projects/fruit_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/borjajuegos9/esp/projects/fruit_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/borjajuegos9/esp/projects/fruit_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/borjajuegos9/esp/projects/fruit_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/borjajuegos9/esp/projects/fruit_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/borjajuegos9/esp/projects/fruit_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

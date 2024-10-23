@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/borjajuegos9/esp/projects/fruit_detection/build/image0.S
+
+/home/borjajuegos9/esp/projects/fruit_detection/build/image1.S
+
+/home/borjajuegos9/esp/projects/fruit_detection/build/image2.S
+
+/home/borjajuegos9/esp/projects/fruit_detection/build/image3.S
+
+/home/borjajuegos9/esp/projects/fruit_detection/build/image4.S
+
+/home/borjajuegos9/esp/projects/fruit_detection/build/image5.S
+
+/home/borjajuegos9/esp/projects/fruit_detection/build/image6.S
+
+/home/borjajuegos9/esp/projects/fruit_detection/build/image7.S
+
+/home/borjajuegos9/esp/projects/fruit_detection/build/image8.S
+
+/home/borjajuegos9/esp/projects/fruit_detection/build/image9.S
+

@@ -1,0 +1,2271 @@
+�ets Jun  8 2016 00:&&��SH�HH���0x1 (POWERON%UMET),boot:0x13 (SPI_FAS�e1M!}	OOT)
+configsip: 0,�A%]A�0xee
+clk_drv:0x00,q_dr����0,d_drv:0x00,cs0_drv'��0,hd_drv:0x00,wp_drv:0x�j
+mode:DIO, clock div:1
+loX����fff0030,len:6592
+loX����0078000,len:16676
+ho 0 taZ�������4
+load:0x40080400,len:4
+loa����0080404,len:4272
+entry 0x40080658
+[0;32mI (30) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (37) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[1;31mE (56) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (61) boot: Failed to verify partition table[0m
+[1;31mE (66) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+I (64) boot: chip revision: v1.0
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+I (64) boot: chip revision: v1.0
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+I (75) boot.esp32: SPI Mode       : QIO
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+I (75) boot.esp32: SPI Mode       : QIO
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+E (92) boot: Failed to verify partition table
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+I (64) boot: chip revision: v1.0
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+E (92) boot: Failed to verify partition table
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (82) boot: Enabling RNG early entropy source...[0m
+[1;31mE (87) flash_parts: partition 0 invalid magic number 0x5742[0m
+[1;31mE (92) boot: Failed to verify partition table[0m
+[1;31mE (96) boot: load partition table error![0m
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6592
+load:0x40078000,len:16676
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:4272
+entry 0x40080658
+[0;32mI (60) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Oct 22 2024 13:56:47[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (64) boot: chip revision: v1.0[0m
+[0;32mI (67) qio_mode: Enabling default flash chip QIO[0m
