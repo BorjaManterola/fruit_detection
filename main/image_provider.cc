@@ -111,9 +111,9 @@ TfLiteStatus GetImage(int image_width, int image_height, int channels, float* im
     }
   }
 #else // DISPLAY_SUPPORT
-  MicroPrintf("Image Captured\n");
   // We have initialised camera to grayscale
   // Just quantize to int8_t
+  printf("\n");
   for (int i = 0; i < image_width * image_height; i++) {
     // Convert the uint8_t pixel to float32
     float pixel = static_cast<float>(((uint8_t *) fb->buf)[i]);
