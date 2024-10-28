@@ -101,9 +101,21 @@ void setup() {
 #ifndef CLI_ONLY_INFERENCE
 void loop() {
 
+  // Wait for the user to press the "a" key
+  printf("Press 'a' to capture an image and run inference...\n");
+  char c;
+  do {
+    c = getchar();
+  } while (c != 'a')
+
   if (kTfLiteOk != GetImage(kNumCols, kNumRows, kNumChannels, input->data.f)) {
     MicroPrintf("Image capture failed.");
   }
+
+  // for (int i = 0; i < kNumCols * kNumRows; i++) {
+  //   printf("%f, ", input->data.f[i]);
+  // }
+  // printf("\n");
 
   if (kTfLiteOk != interpreter->Invoke()) {
     MicroPrintf("Invoke failed.");
@@ -119,7 +131,7 @@ void loop() {
     sign_scores[i] = output->data.f[i];
   }
   RespondToDetection(sign_scores, kCategoryLabels);
-  vTaskDelay(5000 / portTICK_RATE_MS);
+  vTaskDelay(7000 / portTICK_RATE_MS);
 }
 #endif
 

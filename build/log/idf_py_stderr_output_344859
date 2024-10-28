@@ -1,0 +1,76 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400effac: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008a11e: vPortClearInterruptMaskFromISR at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) vPortExitCritical at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:514
+0x40089cf4: xQueueSemaphoreTake at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x40089d94: xQueueTakeMutexRecursive at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:835
+0x40082daf: lock_acquire_generic at /home/borjajuegos9/esp/idf/esp-idf/components/newlib/locks.c:146
+0x40082edd: _lock_acquire_recursive at /home/borjajuegos9/esp/idf/esp-idf/components/newlib/locks.c:162
+0x400d60d5: uart_read at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:256
+0x400d6ec2: esp_vfs_read at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:528 (discriminator 4)
+0x4000bdbb: _read_r in ROM
+0x400017ea: read in ROM
+0x400d6a4b: console_read at /home/borjajuegos9/esp/idf/esp-idf/components/esp_vfs_console/vfs_console.c:94
+0x400d6ec2: esp_vfs_read at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:528 (discriminator 4)
+0x40086e2b: __sread at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:47
+0x40086df9: __srefill_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/refill.c:115
+0x400fcf32: __srget_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/rget.c:42
+0x400fce7e: _getc_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/getc.c:85 (discriminator 1)
+0x400f8c66: getchar at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/getchar.c:90
+0x400d8598: loop at /home/borjajuegos9/esp/projects/fruit_detection/main/main_functions.cc:108
+0x400d8002: tf_main() at /home/borjajuegos9/esp/projects/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m--- 0x400effac: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008a11e: vPortClearInterruptMaskFromISR at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) vPortExitCritical at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:514
+0x40089cf4: xQueueSemaphoreTake at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x40089d94: xQueueTakeMutexRecursive at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:835
+0x40082daf: lock_acquire_generic at /home/borjajuegos9/esp/idf/esp-idf/components/newlib/locks.c:146
+0x40082fe2: _lock_acquire_recursive at /home/borjajuegos9/esp/idf/esp-idf/components/newlib/locks.c:162
+ (inlined by) __retarget_lock_acquire_recursive at /home/borjajuegos9/esp/idf/esp-idf/components/newlib/locks.c:321
+0x40086362: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:277 (discriminator 2)
+0x40086d15: lflush at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/refill.c:29 (discriminator 1)
+ (inlined by) lflush at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/refill.c:26 (discriminator 1)
+0x400868da: _fwalk_sglue at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fwalk.c:47
+0x40086dd3: __srefill_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/refill.c:106
+0x400fcf32: __srget_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/rget.c:42
+0x400fce7e: _getc_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/getc.c:85 (discriminator 1)
+0x400f8c66: getchar at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/getchar.c:90
+0x400d8598: loop at /home/borjajuegos9/esp/projects/fruit_detection/main/main_functions.cc:108
+0x400d8002: tf_main() at /home/borjajuegos9/esp/projects/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m--- 0x400effac: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008a11e: vPortClearInterruptMaskFromISR at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) vPortExitCritical at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:514
+0x40089891: xQueueGenericSend at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x40089965: xQueueGiveMutexRecursive at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:789
+0x40082f7d: lock_release_generic at /home/borjajuegos9/esp/idf/esp-idf/components/newlib/locks.c:197
+ (inlined by) _lock_release_recursive at /home/borjajuegos9/esp/idf/esp-idf/components/newlib/locks.c:211
+0x400d6193: uart_read at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:289
+ (inlined by) uart_read at /home/borjajuegos9/esp/idf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:251
+0x400d6ec2: esp_vfs_read at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:528 (discriminator 4)
+0x4000bdbb: _read_r in ROM
+0x400017ea: read in ROM
+0x400d6a4b: console_read at /home/borjajuegos9/esp/idf/esp-idf/components/esp_vfs_console/vfs_console.c:94
+0x400d6ec2: esp_vfs_read at /home/borjajuegos9/esp/idf/esp-idf/components/vfs/vfs.c:528 (discriminator 4)
+0x40086e2b: __sread at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:47
+0x40086df9: __srefill_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/refill.c:115
+0x400fcf32: __srget_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/rget.c:42
+0x400fce7e: _getc_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/getc.c:85 (discriminator 1)
+0x400f8c66: getchar at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/getchar.c:90
+0x400d8598: loop at /home/borjajuegos9/esp/projects/fruit_detection/main/main_functions.cc:108
+0x400d8002: tf_main() at /home/borjajuegos9/esp/projects/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0m
