@@ -125,9 +125,9 @@ TfLiteStatus GetImage(int image_width, int image_height, int channels, float* im
 #endif // DISPLAY_SUPPORT
 
 // Liberar la memoria del framebuffer
-  free(fb->buf);
-  free(fb);
-  // esp_camera_fb_return(fb);
+  // free(fb->buf);
+  // free(fb);
+  esp_camera_return_all();
   /* here the esp camera can give you grayscale image directly */
   return kTfLiteOk;
 #else

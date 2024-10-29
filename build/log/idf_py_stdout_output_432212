@@ -1,0 +1,101 @@
+ets Jun  8��16 00:2&��SH�
+rst:0� (POWERON_�ets Jun  8 2����:22:57
+
+rst'�� (POWERON_RESETJI�ot:0x13 (SPI_FP*�e1M!}	==Q�
+confi֥�: 0, SPIWP:0xee
+,k�E���0x00,q_drv'��0,d_drv:0x00,c.��rv:0x00,hd_drv:0x00��}drv:0x00
+mode:DR�	�����div:1
+l+��0x3fff0030,len:6MN�H��+��0x4007800bb�n:16676
+ho 0 tXZ�2 room 4
+loX����0080400,len'SH��+��0x4008040����4272
+entry 0�0080658
+[0;32mI (30) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Oct 26 2024 20:39:10[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b30e0h (1781984) map[0m
+[0;32mI (550) esp_image: segment 1: paddr=001c3108 vaddr=3ff80000 size=00018h (    24) load[0m
+[0;32mI (551) esp_image: segment 2: paddr=001c3128 vaddr=3ffb0000 size=03514h ( 13588) load[0m
+[0;32mI (558) esp_image: segment 3: paddr=001c6644 vaddr=40080000 size=099d4h ( 39380) load[0m
+[0;32mI (574) esp_image: segment 4: paddr=001d0020 vaddr=400d0020 size=2f360h (193376) map[0m
+[0;32mI (623) esp_image: segment 5: paddr=001ff388 vaddr=400899d4 size=06d14h ( 27924) load[0m
+[0;32mI (640) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (640) boot: Disabling RNG early entropy source...[0m
+[0;32mI (650) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (650) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (650) esp_psram: Speed: 80MHz[0m
+[0;32mI (654) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (662) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (671) cpu_start: Multicore app[0m
+[0;32mI (1138) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1147) cpu_start: Pro cpu start user code[0m
+[0;32mI (1147) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (1147) app_init: Application information:[0m
+[0;32mI (1150) app_init: Project name:     person_detection[0m
+[0;32mI (1156) app_init: App version:      4c474cc-dirty[0m
+[0;32mI (1162) app_init: Compile time:     Oct 28 2024 20:10:37[0m
+[0;32mI (1168) app_init: ELF file SHA256:  d00c2d190...[0m
+[0;32mI (1173) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (1180) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1185) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1190) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (1195) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1202) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1208) heap_init: At 3FFB41B0 len 0002BE50 (175 KiB): DRAM[0m
+[0;32mI (1215) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1221) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1228) heap_init: At 400906E8 len 0000F918 (62 KiB): IRAM[0m
+[0;32mI (1234) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1242) spi_flash: detected chip: generic[0m
+[0;32mI (1246) spi_flash: flash io: qio[0m
+[0;33mW (1250) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1261) main_task: Started on CPU0[0m
+[0;32mI (1271) main_task: Calling app_main()[0m
+Total heap size: 4509440
+Free heap size: 4486564
+Total PSRAM size: 8388608
+Free PSRAM size: 4191548
+Free heap size after allocation: 4306336
+Free PSRAM size after allocation: 4011320
+[0;32mI (1281) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1291) cam_hal: cam init ok[0m
+[0;32mI (1291) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (1301) sccb: sccb_i2c_port=1[0m
+[0;32mI (1301) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1341) camera: Detected camera at address=0x30[0m
+[0;32mI (1341) camera: Detected OV2640 camera[0m
+[0;32mI (1341) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1411) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1421) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1431) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1441) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1441) cam_hal: cam config ok[0m
+[0;32mI (1451) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+Modificando los sensores...
+PID: 0x26
+Camera Initialized
+
+Press 'a' to capture an image and run inference...
+[0;32mI (1691) cam_hal: Buffer cleaned for frame position 0[0m
+[0;32mI (1801) cam_hal: Buffer cleaned for frame position 1[0m
+[0;31mE (6521) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (6521) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (6521) task_wdt: Tasks currently running:[0m
+[0;31mE (6521) task_wdt: CPU 0: tf_main[0m
+[0;31mE (6521) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (6521) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400EFFB0:0x3FFB11B0 0x40084595:0x3FFB11E0 0x4000BFED:0x3FFB6ED0 0x4008A11E:0x3FFB6EE0 0x40089891:0x3FFB6F00 0x40089965:0x3FFB6F40 0x40082E17:0x3FFB6F60 0x40083009:0x3FFB6F90 0x40086381:0x3FFB6FC0 0x40086D15:0x3FFB6FE0 0x400868DA:0x3FFB7000 0x40086DD3:0x3FFB7020 0x400FCF36:0x3FFB7040 0x400FCE82:0x3FFB7060 0x400F8C6A:0x3FFB7080 0x400D8590:0x3FFB70A0 0x400D7FFA:0x3FFB70E0
+

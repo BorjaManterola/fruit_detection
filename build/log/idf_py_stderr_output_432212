@@ -1,0 +1,27 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- Warning: Failed to decode multiple lines in a row. Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+[0;33m--- Warning: Failed to decode multiple lines in a row. Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+[0;33m--- 0x400effb0: task_wdt_timeout_handling at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+ (inlined by) task_wdt_isr at /home/borjajuegos9/esp/idf/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40084595: _xt_lowint1 at /home/borjajuegos9/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008a11e: vPortClearInterruptMaskFromISR at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) vPortExitCritical at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:514
+0x40089891: xQueueGenericSend at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x40089965: xQueueGiveMutexRecursive at /home/borjajuegos9/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:789
+0x40082e17: lock_release_generic at /home/borjajuegos9/esp/idf/esp-idf/components/newlib/locks.c:197
+0x40083009: _lock_release_recursive at /home/borjajuegos9/esp/idf/esp-idf/components/newlib/locks.c:211
+ (inlined by) __retarget_lock_release_recursive at /home/borjajuegos9/esp/idf/esp-idf/components/newlib/locks.c:347
+0x40086381: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:279 (discriminator 3)
+0x40086d15: lflush at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/refill.c:29 (discriminator 1)
+ (inlined by) lflush at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/refill.c:26 (discriminator 1)
+0x400868da: _fwalk_sglue at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fwalk.c:47
+0x40086dd3: __srefill_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/refill.c:106
+0x400fcf36: __srget_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/rget.c:42
+0x400fce82: _getc_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/getc.c:85 (discriminator 1)
+0x400f8c6a: getchar at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/getchar.c:90
+0x400d8590: loop at /home/borjajuegos9/esp/projects/fruit_detection/main/main_functions.cc:108
+0x400d7ffa: tf_main() at /home/borjajuegos9/esp/projects/fruit_detection/main/main.cc:35 (discriminator 1)
+[0m
+[0m

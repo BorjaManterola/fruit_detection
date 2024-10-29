@@ -101,13 +101,6 @@ void setup() {
 #ifndef CLI_ONLY_INFERENCE
 void loop() {
 
-  // Wait for the user to press the "a" key
-  printf("Press 'a' to capture an image and run inference...\n");
-  char c;
-  do {
-    c = getchar();
-  } while (c != 'a')
-
   if (kTfLiteOk != GetImage(kNumCols, kNumRows, kNumChannels, input->data.f)) {
     MicroPrintf("Image capture failed.");
   }

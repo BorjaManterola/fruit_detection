@@ -1,0 +1,9 @@
+/home/borjajuegos9/esp/projects/fruit_detection/managed_components/espressif__esp32-camera/driver/esp_camera.c: In function 'camera_probe':
+/home/borjajuegos9/esp/projects/fruit_detection/managed_components/espressif__esp32-camera/driver/esp_camera.c:156:48: warning: 'calloc' sizes specified with 'sizeof' in the earlier argument and not in the later argument [-Wcalloc-transposed-args]
+  156 |     s_state = (camera_state_t *) calloc(sizeof(camera_state_t), 1);
+      |                                                ^~~~~~~~~~~~~~
+/home/borjajuegos9/esp/projects/fruit_detection/managed_components/espressif__esp32-camera/driver/esp_camera.c:156:48: note: earlier argument should specify number of elements, later size of each element
+In file included from /home/borjajuegos9/esp/projects/fruit_detection/main/image_provider.cc:23:
+/home/borjajuegos9/esp/idf/esp-idf/components/spi_flash/include/esp_spi_flash.h:6:2: warning: #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead [-Wcpp]
+    6 | #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead
+      |  ^~~~~~~
